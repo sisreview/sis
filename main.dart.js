@@ -294,7 +294,7 @@ r=o.navigator.userAgent
 if(B.e.cj(s,"Mac")){o=self.window
 o=o.navigator.maxTouchPoints
 if(o==null)o=p
-o=o==null?p:B.c.ad(o)
+o=o==null?p:B.d.ad(o)
 q=o
 if((q==null?0:q)>2)return B.aQ
 return B.bG}else if(B.e.q(s.toLowerCase(),"iphone")||B.e.q(s.toLowerCase(),"ipad")||B.e.q(s.toLowerCase(),"ipod"))return B.aQ
@@ -554,7 +554,7 @@ else{r=j.makeImageAtCurrentFrame()
 if(!s&&d<=0)d=null
 if(c!=null&&c<=0)c=null
 s=d==null
-if(s&&c!=null)d=B.c.aW(c*(r.width()/r.height()))
+if(s&&c!=null)d=B.d.aW(c*(r.width()/r.height()))
 else if(c==null&&!s)c=B.n.iG(d,r.width()/r.height())
 q=new A.lK()
 p=q.rO(B.cL)
@@ -577,8 +577,8 @@ m.toString
 l=A.aJ7(m)
 if(l==null)A.Z(A.m6("Failed to re-size image"))
 j=$.bE.by().MakeAnimatedImageFromEncoded(l)
-if(j==null)A.Z(A.m6("Failed to decode re-sized image data.\nImage source: "+b))}k.d=B.c.ad(j.getFrameCount())
-k.e=B.c.ad(j.getRepetitionCount())
+if(j==null)A.Z(A.m6("Failed to decode re-sized image data.\nImage source: "+b))}k.d=B.d.ad(j.getFrameCount())
+k.e=B.d.ad(j.getRepetitionCount())
 s=new A.eF("Codec",t.gA)
 s.iH(k,j,"Codec",t.e)
 k.a!==$&&A.ch()
@@ -621,7 +621,7 @@ p=(p==null?$.cm=A.eW(self.window.flutterConfiguration):p).b
 if(p==null)p=null
 else{p=p.canvasKitMaximumSurfaces
 if(p==null)p=null
-p=p==null?null:B.c.ad(p)}if(p==null)p=8
+p=p==null?null:B.d.ad(p)}if(p==null)p=8
 s=A.be(self.document,"flt-canvas-container")
 r=t.y1
 q=A.a([],r)
@@ -665,7 +665,7 @@ return null},
 aAD(a,b){var s,r=new A.If(t.e.a($.aCI().h(0,b).segment(a)[self.Symbol.iterator]()),t.yN),q=A.a([],t.t)
 for(;r.v();){s=r.b
 s===$&&A.b()
-q.push(B.c.ad(s.index))}q.push(a.length)
+q.push(B.d.ad(s.index))}q.push(a.length)
 return new Uint32Array(A.iR(q))},
 aOi(a){var s,r,q,p,o=A.aAf(a,a,$.aDp()),n=o.length,m=new Uint32Array((n+1)*2)
 m[0]=0
@@ -1011,8 +1011,8 @@ m=A.YZ(n)
 n=new A.ZL(A.Z_(q),A.YZ(n),c,A.a([],t.vj),A.dn())
 s=new A.kc(a,l,n,k,p,m,s,c,b)
 A.x(l.style,"position","absolute")
-s.z=B.c.dK(r)-1
-s.Q=B.c.dK(o)-1
+s.z=B.d.dK(r)-1
+s.Q=B.d.dK(o)-1
 s.Pl()
 n.z=l
 s.O6()
@@ -1021,12 +1021,12 @@ Z_(a){var s
 $.bM()
 s=self.window.devicePixelRatio
 if(s===0)s=1
-return B.c.dY((a+1)*s)+2},
+return B.d.dY((a+1)*s)+2},
 YZ(a){var s
 $.bM()
 s=self.window.devicePixelRatio
 if(s===0)s=1
-return B.c.dY((a+1)*s)+2},
+return B.d.dY((a+1)*s)+2},
 aEr(a){a.remove()},
 apd(a){if(a==null)return null
 switch(a.a){case 3:return"source-over"
@@ -1342,7 +1342,7 @@ if(o!=null){l=o.b
 o=$.ci()
 if(o===B.R&&!i){A.x(n,"box-shadow","0px 0px "+A.m(l*2)+"px "+m)
 o=b.r
-m=A.d4(((B.c.aW((1-Math.min(Math.sqrt(l)/6.283185307179586,1))*(o>>>24&255))&255)<<24|o&16777215)>>>0)}else A.x(n,"filter","blur("+A.m(l)+"px)")}A.x(n,"width",A.m(a.c-s)+"px")
+m=A.d4(((B.d.aW((1-Math.min(Math.sqrt(l)/6.283185307179586,1))*(o>>>24&255))&255)<<24|o&16777215)>>>0)}else A.x(n,"filter","blur("+A.m(l)+"px)")}A.x(n,"width",A.m(a.c-s)+"px")
 A.x(n,"height",A.m(a.d-r)+"px")
 if(i)A.x(n,"border",A.lr(h)+" solid "+m)
 else{A.x(n,"background-color",m)
@@ -1359,7 +1359,7 @@ return}A.x(a,"border-top-left-radius",A.lr(q)+" "+A.lr(b.f))
 A.x(a,"border-top-right-radius",A.lr(p)+" "+A.lr(b.w))
 A.x(a,"border-bottom-left-radius",A.lr(b.z)+" "+A.lr(b.Q))
 A.x(a,"border-bottom-right-radius",A.lr(b.x)+" "+A.lr(b.y))},
-lr(a){return B.c.a6(a===0?1:a,3)+"px"},
+lr(a){return B.d.a6(a===0?1:a,3)+"px"},
 aqT(a,b,c){var s,r,q,p,o,n,m
 if(0===b){c.push(new A.l(a.c,a.d))
 c.push(new A.l(a.e,a.f))
@@ -1684,9 +1684,9 @@ a3=Math.max(a3,d)
 n=Math.min(n,a1)
 a6=Math.min((a3-p)/a8,(Math.max(a5,a1)-n)/a9)
 if(a6<1e-9||a6===1)return 1
-if(a6>1){a6=Math.min(4,B.c.dY(a6/2)*2)
+if(a6>1){a6=Math.min(4,B.d.dY(a6/2)*2)
 s=a8*a9
-if(s*a6*a6>4194304&&a6>2)a6=3355443.2/s}else a6=Math.max(2/B.c.dK(2/a6),0.0001)
+if(s*a6*a6>4194304&&a6>2)a6=3355443.2/s}else a6=Math.max(2/B.d.dK(2/a6),0.0001)
 return a6},
 vj(a){var s,r=a.a,q=r.x,p=q!=null?0+q.b*2:0
 r=r.c
@@ -1761,7 +1761,7 @@ if(d){a.addColorStop(0,"#00000000")
 s=0.999
 r=0.0005000000000000004}else{s=1
 r=0}if(c==null){a.addColorStop(r,A.d4(b[0].a))
-a.addColorStop(1-r,A.d4(b[1].a))}else for(q=0;q<b.length;++q)a.addColorStop(B.c.iR(c[q],0,1)*s+r,A.d4(b[q].a))
+a.addColorStop(1-r,A.d4(b[1].a))}else for(q=0;q<b.length;++q)a.addColorStop(B.d.iR(c[q],0,1)*s+r,A.d4(b[q].a))
 if(d)a.addColorStop(1,"#00000000")},
 aNc(a,b,c,d){var s,r,q,p,o,n="tiled_st",m=b.c
 m.push("vec4 bias;")
@@ -1959,8 +1959,8 @@ aGv(a,b){return t.e.a({initializeEngine:A.bq(new A.a3x(b)),autoStart:A.bq(new A.
 aGu(a){return t.e.a({runApp:A.bq(new A.a3v(a))})},
 att(a,b){var s=A.bq(new A.apA(a,b))
 return new self.Promise(s)},
-at1(a){var s=B.c.ad(a)
-return A.cd(B.c.ad((a-s)*1000),s,0)},
+at1(a){var s=B.d.ad(a)
+return A.cd(B.d.ad((a-s)*1000),s,0)},
 aLC(a,b){var s={}
 s.a=null
 return new A.aor(s,a,b)},
@@ -2024,8 +2024,8 @@ aNF(a){switch(a){case 0:return 1
 case 1:return 4
 case 2:return 2
 default:return B.n.W4(1,a)}},
-pL(a){var s=B.c.ad(a)
-return A.cd(B.c.ad((a-s)*1000),s,0)},
+pL(a){var s=B.d.ad(a)
+return A.cd(B.d.ad((a-s)*1000),s,0)},
 atm(a,b){var s,r,q,p,o=$.dR
 if((o==null?$.dR=A.km():o).x&&a.offsetX===0&&a.offsetY===0)return A.aLR(a,b)
 o=$.eo.x
@@ -2063,7 +2063,7 @@ if(s-$.aCH()>1e5){$.aMa=s
 r=$.at4
 A.FV(q.ch,q.CW,r)
 $.at4=A.a([],t.no)}},
-FL(){return B.c.ad(self.window.performance.now()*1000)},
+FL(){return B.d.ad(self.window.performance.now()*1000)},
 aIm(a){var s=new A.a9W(A.H(t.N,t.qe),a)
 s.a_V(a)
 return s},
@@ -2174,7 +2174,7 @@ return new A.a3a(a)},
 aAf(a,b,c){var s,r,q,p,o,n,m,l,k=A.a([],t._f)
 c.adoptText(b)
 c.first()
-for(s=a.length,r=0;c.next()!==-1;r=q){q=B.c.ad(c.current())
+for(s=a.length,r=0;c.next()!==-1;r=q){q=B.d.ad(c.current())
 for(p=r,o=0,n=0;p<q;++p){m=a.charCodeAt(p)
 if(B.K9.q(0,m)){++o;++n}else if(B.K3.q(0,m))++n
 else if(n>0){k.push(new A.mh(B.cC,o,n,r,p))
@@ -2315,7 +2315,7 @@ $.azL=b
 $.azI=s
 $.azM=r
 if(e==null)e=0
-return B.c.aW((e!==0?r+e*(d-c):r)*100)/100},
+return B.d.aW((e!==0?r+e*(d-c):r)*100)/100},
 avN(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,a0,a1,a2){var s=g==null,r=s?"":g
 return new A.wY(b,c,d,e,f,m,k,a1,!s,r,h,i,l,j,p,a2,o,q,a,n,a0)},
 aAC(a){if(a==null)return null
@@ -2577,30 +2577,30 @@ wR(a,b,c,d,e){var s,r=a==null?0:a
 r=Math.max(0,r)
 s=d==null?0:d
 return new A.r6(e,r,Math.max(0,s),b,c)},
-avJ(a){var s=J.aK(a),r=A.d3(s.h(a,"text")),q=B.c.ad(A.hT(s.h(a,"selectionBase"))),p=B.c.ad(A.hT(s.h(a,"selectionExtent"))),o=A.ary(a,"composingBase"),n=A.ary(a,"composingExtent")
+avJ(a){var s=J.aK(a),r=A.d3(s.h(a,"text")),q=B.d.ad(A.hT(s.h(a,"selectionBase"))),p=B.d.ad(A.hT(s.h(a,"selectionExtent"))),o=A.ary(a,"composingBase"),n=A.ary(a,"composingExtent")
 s=o==null?-1:o
 return A.wR(q,s,n==null?-1:n,p,r)},
 avI(a){var s,r,q,p=null,o=globalThis.HTMLInputElement
 if(o!=null&&a instanceof o){s=a.selectionDirection
 if((s==null?p:s)==="backward"){s=A.ara(a)
 r=A.avm(a)
-r=r==null?p:B.c.ad(r)
+r=r==null?p:B.d.ad(r)
 q=A.avn(a)
-return A.wR(r,-1,-1,q==null?p:B.c.ad(q),s)}else{s=A.ara(a)
+return A.wR(r,-1,-1,q==null?p:B.d.ad(q),s)}else{s=A.ara(a)
 r=A.avn(a)
-r=r==null?p:B.c.ad(r)
+r=r==null?p:B.d.ad(r)
 q=A.avm(a)
-return A.wR(r,-1,-1,q==null?p:B.c.ad(q),s)}}else{o=globalThis.HTMLTextAreaElement
+return A.wR(r,-1,-1,q==null?p:B.d.ad(q),s)}}else{o=globalThis.HTMLTextAreaElement
 if(o!=null&&a instanceof o){s=a.selectionDirection
 if((s==null?p:s)==="backward"){s=A.avs(a)
 r=A.avq(a)
-r=r==null?p:B.c.ad(r)
+r=r==null?p:B.d.ad(r)
 q=A.avr(a)
-return A.wR(r,-1,-1,q==null?p:B.c.ad(q),s)}else{s=A.avs(a)
+return A.wR(r,-1,-1,q==null?p:B.d.ad(q),s)}else{s=A.avs(a)
 r=A.avr(a)
-r=r==null?p:B.c.ad(r)
+r=r==null?p:B.d.ad(r)
 q=A.avq(a)
-return A.wR(r,-1,-1,q==null?p:B.c.ad(q),s)}}else throw A.e(A.a6("Initialized with unsupported input type"))}},
+return A.wR(r,-1,-1,q==null?p:B.d.ad(q),s)}}else throw A.e(A.a6("Initialized with unsupported input type"))}},
 awd(a){var s,r,q,p,o,n="inputType",m="autofill",l=J.aK(a),k=t.a,j=A.bA(J.bv(k.a(l.h(a,n)),"name")),i=A.nq(J.bv(k.a(l.h(a,n)),"decimal"))
 j=A.avL(j,i===!0)
 i=A.d3(l.h(a,"inputAction"))
@@ -2707,11 +2707,11 @@ case 2:return"#0000"+s
 case 3:return"#000"+s
 case 4:return"#00"+s
 case 5:return"#0"+s
-default:return"#"+s}}else{r=""+"rgba("+B.n.k(a>>>16&255)+","+B.n.k(a>>>8&255)+","+B.n.k(a&255)+","+B.c.k((a>>>24&255)/255)+")"
+default:return"#"+s}}else{r=""+"rgba("+B.n.k(a>>>16&255)+","+B.n.k(a>>>8&255)+","+B.n.k(a&255)+","+B.d.k((a>>>24&255)/255)+")"
 return r.charCodeAt(0)==0?r:r}},
 aNx(a,b,c,d){var s=""+a,r=""+b,q=""+c
 if(d===255)return"rgb("+s+","+r+","+q+")"
-else return"rgba("+s+","+r+","+q+","+B.c.a6(d/255,2)+")"},
+else return"rgba("+s+","+r+","+q+","+B.d.a6(d/255,2)+")"},
 azB(){if(A.aOG())return"BlinkMacSystemFont"
 var s=$.dt()
 if(s!==B.aQ)s=s===B.bG
@@ -2734,7 +2734,7 @@ if(b==null||a.length!==b.length)return!1
 for(s=0;s<a.length;++s)if(!J.i(a[s],b[s]))return!1
 return!0},
 ary(a,b){var s=A.azm(J.bv(a,b))
-return s==null?null:B.c.ad(s)},
+return s==null?null:B.d.ad(s)},
 aNs(a){return new A.ah(a,new A.aph(),A.bF(a).i("ah<a7.E,v>")).bS(0," ")},
 dj(a,b,c){A.x(a.style,b,c)},
 aBg(a){var s=self.document.querySelector("#flutterweb-theme")
@@ -5113,7 +5113,7 @@ return s},
 ny(a){if(a==null)return J.A(a)
 if(typeof a=="object")return A.hx(a)
 return J.A(a)},
-aNE(a){if(typeof a=="number")return B.c.gB(a)
+aNE(a){if(typeof a=="number")return B.d.gB(a)
 if(a instanceof A.EQ)return A.hx(a)
 if(a instanceof A.iO)return a.gB(a)
 if(a instanceof A.l_)return a.gB(a)
@@ -8549,16 +8549,16 @@ I(a,b,c){if(a<b)return b
 if(a>c)return c
 if(isNaN(a))return c
 return a},
-aA_(a,b){return A.Y(A.nt(B.c.aW((a.gm(a)>>>24&255)*b),0,255),a.gm(a)>>>16&255,a.gm(a)>>>8&255,a.gm(a)&255)},
+aA_(a,b){return A.Y(A.nt(B.d.aW((a.gm(a)>>>24&255)*b),0,255),a.gm(a)>>>16&255,a.gm(a)>>>8&255,a.gm(a)&255)},
 auY(a){return new A.h(a>>>0)},
 Y(a,b,c,d){return new A.h(((a&255)<<24|(b&255)<<16|(c&255)<<8|d&255)>>>0)},
-aEX(a,b,c,d){return new A.h(((B.c.cW(d*255,1)&255)<<24|(a&255)<<16|(b&255)<<8|c&255)>>>0)},
+aEX(a,b,c,d){return new A.h(((B.d.cW(d*255,1)&255)<<24|(a&255)<<16|(b&255)<<8|c&255)>>>0)},
 aqS(a){if(a<=0.03928)return a/12.92
 return Math.pow((a+0.055)/1.055,2.4)},
 D(a,b,c){if(b==null)if(a==null)return null
 else return A.aA_(a,1-c)
 else if(a==null)return A.aA_(b,c)
-else return A.Y(A.nt(B.c.ad(A.aoW(a.gm(a)>>>24&255,b.gm(b)>>>24&255,c)),0,255),A.nt(B.c.ad(A.aoW(a.gm(a)>>>16&255,b.gm(b)>>>16&255,c)),0,255),A.nt(B.c.ad(A.aoW(a.gm(a)>>>8&255,b.gm(b)>>>8&255,c)),0,255),A.nt(B.c.ad(A.aoW(a.gm(a)&255,b.gm(b)&255,c)),0,255))},
+else return A.Y(A.nt(B.d.ad(A.aoW(a.gm(a)>>>24&255,b.gm(b)>>>24&255,c)),0,255),A.nt(B.d.ad(A.aoW(a.gm(a)>>>16&255,b.gm(b)>>>16&255,c)),0,255),A.nt(B.d.ad(A.aoW(a.gm(a)>>>8&255,b.gm(b)>>>8&255,c)),0,255),A.nt(B.d.ad(A.aoW(a.gm(a)&255,b.gm(b)&255,c)),0,255))},
 av_(a,b){var s,r,q,p=a.gm(a)>>>24&255
 if(p===0)return b
 s=255-p
@@ -8651,7 +8651,7 @@ if(r==null)r=3
 s=b==null?null:b.a
 r=A.a1(r,s==null?3:s,c)
 r.toString
-return B.mM[A.nt(B.c.aW(r),0,8)]},
+return B.mM[A.nt(B.d.aW(r),0,8)]},
 axZ(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1){return $.af().R1(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1)},
 arU(a,b,c,d,e,f,g,h,i,j,k,l){return $.af().QX(a,b,c,d,e,f,g,h,i,j,k,l)},
 aHL(a){throw A.e(A.cR(null))},
@@ -9456,7 +9456,7 @@ if(q==null){q=A.cP(a,B.kv)
 q=q==null?s:q.e
 if(q==null)q=B.ae}q=q===B.ae?A.Y(51,0,0,0):s
 return new A.Po(b,c,q,new A.nP(B.Bt.d7(a),d,s),s)},
-aKQ(a,b,c){var s,r,q,p,o,n,m=null,l=b.a,k=b.b,j=b.c,i=b.d,h=[new A.ds(new A.l(j,i),new A.aO(-b.x,-b.y)),new A.ds(new A.l(l,i),new A.aO(b.z,-b.Q)),new A.ds(new A.l(l,k),new A.aO(b.e,b.f)),new A.ds(new A.l(j,k),new A.aO(-b.r,b.w))],g=B.c.iG(c,1.5707963267948966)
+aKQ(a,b,c){var s,r,q,p,o,n,m=null,l=b.a,k=b.b,j=b.c,i=b.d,h=[new A.ds(new A.l(j,i),new A.aO(-b.x,-b.y)),new A.ds(new A.l(l,i),new A.aO(b.z,-b.Q)),new A.ds(new A.l(l,k),new A.aO(b.e,b.f)),new A.ds(new A.l(j,k),new A.aO(-b.r,b.w))],g=B.d.iG(c,1.5707963267948966)
 for(l=4+g,s=g;s<l;++s){r=h[B.n.dt(s,4)]
 q=A.bg("#0#1",new A.alR(r))
 p=A.bg("#0#2",new A.alS(r))
@@ -12490,7 +12490,7 @@ aGa(a,b,c){if(a===b)return a
 return new A.wU(A.j4(a.a,b.a,c))},
 wU:function wU(a){this.a=a},
 Qa:function Qa(){},
-avK(a,b,c){if(b!=null&&!b.j(0,B.I))return A.av_(A.Y(B.c.aW(255*A.aGc(c)),b.gm(b)>>>16&255,b.gm(b)>>>8&255,b.gm(b)&255),a)
+avK(a,b,c){if(b!=null&&!b.j(0,B.I))return A.av_(A.Y(B.d.aW(255*A.aGc(c)),b.gm(b)>>>16&255,b.gm(b)>>>8&255,b.gm(b)&255),a)
 return a},
 aGc(a){var s,r,q,p,o,n
 if(a<0)return 0
@@ -15923,7 +15923,7 @@ if(r&&b===0)return"Alignment.centerRight"
 if(q&&b===1)return"Alignment.bottomLeft"
 if(s&&b===1)return"Alignment.bottomCenter"
 if(r&&b===1)return"Alignment.bottomRight"
-return"Alignment("+B.c.a6(a,1)+", "+B.c.a6(b,1)+")"},
+return"Alignment("+B.d.a6(a,1)+", "+B.d.a6(b,1)+")"},
 aEi(a,b,c){var s,r
 if(a===b)return a
 s=A.a1(a.a,b.a,c)
@@ -15943,7 +15943,7 @@ if(r&&b===0)return"AlignmentDirectional.centerEnd"
 if(q&&b===1)return"AlignmentDirectional.bottomStart"
 if(s&&b===1)return"AlignmentDirectional.bottomCenter"
 if(r&&b===1)return"AlignmentDirectional.bottomEnd"
-return"AlignmentDirectional("+B.c.a6(a,1)+", "+B.c.a6(b,1)+")"},
+return"AlignmentDirectional("+B.d.a6(a,1)+", "+B.d.a6(b,1)+")"},
 nC:function nC(){},
 dC:function dC(a,b){this.a=a
 this.b=b},
@@ -16410,10 +16410,10 @@ if(q)a3.kz(b0,a,d,i)
 else for(s=A.aMg(b4,d,b5),r=s.length,a0=0;a0<s.length;s.length===r||(0,A.T)(s),++a0)a3.kz(b0,a,s[a0],i)
 if(c)a3.bT(0)},
 aMg(a,b,c){var s,r,q,p,o,n,m=b.c,l=b.a,k=m-l,j=b.d,i=b.b,h=j-i,g=c!==B.D5
-if(!g||c===B.D6){s=B.c.dK((a.a-l)/k)
-r=B.c.dY((a.c-m)/k)}else{s=0
-r=0}if(!g||c===B.D7){q=B.c.dK((a.b-i)/h)
-p=B.c.dY((a.d-j)/h)}else{q=0
+if(!g||c===B.D6){s=B.d.dK((a.a-l)/k)
+r=B.d.dY((a.c-m)/k)}else{s=0
+r=0}if(!g||c===B.D7){q=B.d.dK((a.b-i)/h)
+p=B.d.dY((a.d-j)/h)}else{q=0
 p=0}m=A.a([],t.AO)
 for(o=s;o<=r;++o)for(l=o*k,n=q;n<=p;++n)m.push(b.ce(new A.l(l,n*h)))
 return m},
@@ -18304,8 +18304,8 @@ s.aw()
 s.saI(null)
 return s},
 aaz(a,b){if(b==null)return a
-return B.c.dY(a/b)*b},
-aIx(a,b){var s=new A.LH(B.c.aW(A.I(b,0,1)*255),b,a,null,A.ag())
+return B.d.dY(a/b)*b},
+aIx(a,b){var s=new A.LH(B.d.aW(A.I(b,0,1)*255),b,a,null,A.ag())
 s.aw()
 s.saI(null)
 return s},
@@ -21871,9 +21871,9 @@ else l=!0
 if(l){if(s.h(0,m)==null)s.n(0,m,A.ayz(m,j,A.a([],p)))
 s.h(0,m).c.push(n)}}return s},
 ar3(a,b,c){var s=a.b
-return B.c.b3(Math.abs(b.b-s),Math.abs(c.b-s))},
+return B.d.b3(Math.abs(b.b-s),Math.abs(c.b-s))},
 ar2(a,b,c){var s=a.a
-return B.c.b3(Math.abs(b.a-s),Math.abs(c.a-s))},
+return B.d.b3(Math.abs(b.a-s),Math.abs(c.a-s))},
 aFx(a,b){var s=A.an(b,!0,b.$ti.i("q.E"))
 A.lA(s,new A.a18(a),t.mx)
 return s},
@@ -26431,7 +26431,7 @@ return}p=r}s=i+1
 h[i]=m
 B.b.c6(h,s,s+(g-n),e,n)},
 hW(a){if(a==null)return"null"
-return B.c.a6(a,1)},
+return B.d.a6(a,1)},
 aNA(a,b,c,d,e){return A.apk(a,b,c,d,e)},
 aAw(a,b){var s=t.s,r=A.a(a.split("\n"),s)
 $.XL().U(0,r)
@@ -26820,7 +26820,7 @@ if(p===0)p=1
 l.scale(h*q,p*q)
 k.aa_()},
 JH(a,b){var s=this.as
-return A.aPw(B.c.dY(a*s),B.c.dY(b*s))},
+return A.aPw(B.d.dY(a*s),B.d.dY(b*s))},
 a4(a){var s,r,q,p,o,n=this
 n.ZD(0)
 if(n.y!=null){s=n.d
@@ -27121,7 +27121,7 @@ $1(a){this.a.remove()
 this.b.eb(0,!1)},
 $S:3}
 A.ZH.prototype={
-cn(a){B.c.ad(this.a.a.save())},
+cn(a){B.d.ad(this.a.a.save())},
 hR(a,b){var s=t.qo,r=this.a
 if(a==null){s.a(b)
 A.ase(r.a,b.a,null,null,null)}else r.hR(a,s.a(b))},
@@ -27196,8 +27196,8 @@ $.cy()
 s=$.bM().d
 if(s==null){s=self.window.devicePixelRatio
 if(s===0)s=1}r=d?5:4
-q=A.Y(B.c.aW((b.gm(b)>>>24&255)*0.039),b.gm(b)>>>16&255,b.gm(b)>>>8&255,b.gm(b)&255)
-p=A.Y(B.c.aW((b.gm(b)>>>24&255)*0.25),b.gm(b)>>>16&255,b.gm(b)>>>8&255,b.gm(b)&255)
+q=A.Y(B.d.aW((b.gm(b)>>>24&255)*0.039),b.gm(b)>>>16&255,b.gm(b)>>>8&255,b.gm(b)&255)
+p=A.Y(B.d.aW((b.gm(b)>>>24&255)*0.25),b.gm(b)>>>16&255,b.gm(b)>>>8&255,b.gm(b)&255)
 o=t.e.a({ambient:A.vo(q),spot:A.vo(p)})
 n=$.bE.by().computeTonalColors(o)
 m=a.a
@@ -27666,20 +27666,20 @@ gcV(a){var s=this.b
 s===$&&A.b()
 s=s.a
 s===$&&A.b()
-return B.c.ad(s.a.width())},
+return B.d.ad(s.a.width())},
 gc1(a){var s=this.b
 s===$&&A.b()
 s=s.a
 s===$&&A.b()
-return B.c.ad(s.a.height())},
+return B.d.ad(s.a.height())},
 k(a){var s,r=this.b
 r===$&&A.b()
 r=r.a
 r===$&&A.b()
-r=B.c.ad(r.a.width())
+r=B.d.ad(r.a.width())
 s=this.b.a
 s===$&&A.b()
-return"["+r+"\xd7"+B.c.ad(s.a.height())+"]"}}
+return"["+r+"\xd7"+B.d.ad(s.a.height())+"]"}}
 A.Ha.prototype={$ikh:1}
 A.BM.prototype={
 G8(a){var s=this.d
@@ -27718,7 +27718,7 @@ gzV(){return this.e},
 jg(){var s,r,q=this.a
 q===$&&A.b()
 s=q.a
-q=A.cd(0,B.c.ad(s.currentFrameDuration()),0)
+q=A.cd(0,B.d.ad(s.currentFrameDuration()),0)
 r=A.a_b(s.makeImageAtCurrentFrame(),null)
 s.decodeNextFrame()
 return A.cF(new A.vy(q,r),t.Uy)},
@@ -27910,7 +27910,7 @@ jO(a,b){var s=this.c.a
 s===$&&A.b()
 this.b=A.ats(s.a.cullRect()).ce(this.d)},
 h6(a){var s,r=a.b.a
-B.c.ad(r.save())
+B.d.ad(r.save())
 s=this.d
 r.translate(s.a,s.b)
 s=this.c.a
@@ -27977,7 +27977,7 @@ A.a_c.prototype={}
 A.Hc.prototype={
 adc(a){this.a.push(a)},
 cn(a){var s,r,q
-for(s=this.a,r=0,q=0;q<s.length;++q)r=B.c.ad(s[q].a.save())
+for(s=this.a,r=0,q=0;q<s.length;++q)r=B.d.ad(s[q].a.save())
 return r},
 hR(a,b){var s,r,q,p,o,n
 for(s=this.a,r=b==null,q=0;q<s.length;++q){p=s[q]
@@ -28433,8 +28433,8 @@ r.toString
 n=p.b
 A.r0(r,n)
 j.ay=p
-j.z=B.c.dY(o)
-j.Q=B.c.dY(n)
+j.z=B.d.dY(o)
+j.Q=B.d.dY(n)
 j.xe()}}if(j.b||j.ay==null){r=j.a
 if(r!=null)r.l()
 j.a=null
@@ -28450,8 +28450,8 @@ r=j.y
 r.toString
 A.e8(r,h,j.d,!1)
 j.y.remove()
-j.d=j.e=null}j.z=B.c.dY(a.a)
-r=B.c.dY(a.b)
+j.d=j.e=null}j.z=B.d.dY(a.a)
+r=B.d.dY(a.b)
 j.Q=r
 m=j.y=A.FQ(r,j.z)
 r=A.ap("true")
@@ -28472,14 +28472,14 @@ o=!(o==null?$.cm=A.eW(self.window.flutterConfiguration):o).gQo()}else o=!1
 if(o){o=$.bE.by()
 n=$.hi
 if(n==null)n=$.hi=A.vi()
-l=j.r=B.c.ad(o.GetWebGLContext(m,r.a({antialias:0,majorVersion:n})))
+l=j.r=B.d.ad(o.GetWebGLContext(m,r.a({antialias:0,majorVersion:n})))
 if(l!==0){j.f=$.bE.by().MakeGrContext(l)
 if(j.as===-1||j.at===-1){r=j.y
 r.toString
 o=$.hi
 k=A.aFO(r,o==null?$.hi=A.vi():o)
-j.as=B.c.ad(k.getParameter(B.c.ad(k.SAMPLES)))
-j.at=B.c.ad(k.getParameter(B.c.ad(k.STENCIL_BITS)))}j.Oq()}}j.x.append(m)
+j.as=B.d.ad(k.getParameter(B.d.ad(k.SAMPLES)))
+j.at=B.d.ad(k.getParameter(B.d.ad(k.STENCIL_BITS)))}j.Oq()}}j.x.append(m)
 j.ay=a}else{$.cy()
 r=$.bM().d
 if(r==null){r=self.window.devicePixelRatio
@@ -28503,7 +28503,7 @@ if(s==null){s=self.window.devicePixelRatio
 if(s===0)s=1}p=this.y.style
 A.x(p,"width",A.m(o/r)+"px")
 A.x(p,"height",A.m(q/s)+"px")},
-OS(){var s,r=B.c.dY(this.ch.b),q=this.Q
+OS(){var s,r=B.d.dY(this.ch.b),q=this.Q
 $.cy()
 s=$.bM().d
 if(s==null){s=self.window.devicePixelRatio
@@ -28527,7 +28527,7 @@ q.toString
 return r.wo(q,"Failed to initialize WebGL context")}else{q=$.bE.by()
 s=r.f
 s.toString
-s=A.bj(q,"MakeOnScreenGLSurface",[s,B.c.zZ(a.a),B.c.zZ(a.b),self.window.flutterCanvasKit.ColorSpace.SRGB,r.as,r.at])
+s=A.bj(q,"MakeOnScreenGLSurface",[s,B.d.zZ(a.a),B.d.zZ(a.b),self.window.flutterCanvasKit.ColorSpace.SRGB,r.as,r.at])
 if(s==null){q=r.y
 q.toString
 return r.wo(q,"Failed to initialize WebGL surface")}return new A.Hh(s,r.r)}}},
@@ -28571,11 +28571,11 @@ A.a_f.prototype={
 $0(){var s,r,q,p,o,n,m,l,k,j,i,h,g=this.a,f=g.a,e=g.b,d=g.c,c=g.d,b=g.e,a=g.f,a0=g.w,a1=g.z,a2=g.Q,a3=g.as,a4=g.at,a5=g.ch,a6=g.CW,a7=g.cx,a8=g.db,a9=t.e,b0=a9.a({})
 if(a5!=null){s=A.vo(new A.h(a5.y))
 b0.backgroundColor=s}if(f!=null){s=A.vo(f)
-b0.color=s}if(e!=null){r=B.c.ad($.bE.by().NoDecoration)
+b0.color=s}if(e!=null){r=B.d.ad($.bE.by().NoDecoration)
 s=e.a
-if((s|1)===s)r=(r|B.c.ad($.bE.by().UnderlineDecoration))>>>0
-if((s|2)===s)r=(r|B.c.ad($.bE.by().OverlineDecoration))>>>0
-if((s|4)===s)r=(r|B.c.ad($.bE.by().LineThroughDecoration))>>>0
+if((s|1)===s)r=(r|B.d.ad($.bE.by().UnderlineDecoration))>>>0
+if((s|2)===s)r=(r|B.d.ad($.bE.by().OverlineDecoration))>>>0
+if((s|4)===s)r=(r|B.d.ad($.bE.by().LineThroughDecoration))>>>0
 b0.decoration=r}if(b!=null)b0.decorationThickness=b
 if(d!=null){s=A.vo(d)
 b0.decorationColor=s}if(c!=null)b0.decorationStyle=$.aDh()[c.a]
@@ -28653,13 +28653,13 @@ Ai(a,b,c){return this.v_(a,b,c,B.cr)},
 Iw(a){var s,r,q,p,o,n,m,l=A.a([],t.G)
 for(s=a.a,r=J.aK(s),q=a.$ti.z[1],p=0;p<r.gu(s);++p){o=q.a(r.h(s,p))
 n=o.rect
-m=B.c.ad(o.dir.value)
+m=B.d.ad(o.dir.value)
 l.push(new A.dK(n[0],n[1],n[2],n[3],B.mJ[m]))}return l},
 dS(a){var s,r=this.a
 r===$&&A.b()
 r=r.a.getGlyphPositionAtCoordinate(a.a,a.b)
-s=B.Ex[B.c.ad(r.affinity.value)]
-return new A.b1(B.c.ad(r.pos),s)},
+s=B.Ex[B.d.ad(r.affinity.value)]
+return new A.b1(B.d.ad(r.pos),s)},
 k0(a){var s,r
 switch(a.b.a){case 0:s=a.a-1
 break
@@ -28668,7 +28668,7 @@ break
 default:s=null}r=this.a
 r===$&&A.b()
 r=r.a.getWordBoundary(s)
-return new A.bO(B.c.ad(r.start),B.c.ad(r.end))},
+return new A.bO(B.d.ad(r.start),B.d.ad(r.end))},
 fq(a){var s,r,q,p,o=this,n=a.a
 if(o.b===n)return
 o.b=n
@@ -28695,7 +28695,7 @@ p=J.iX(p.a.getLineMetrics(),t.e)
 s=a.a
 for(p=new A.cY(p,p.gu(p)),r=A.p(p).c;p.v();){q=p.d
 if(q==null)q=r.a(q)
-if(s>=q.startIndex&&s<=q.endIndex)return new A.bO(B.c.ad(q.startIndex),B.c.ad(q.endIndex))}return B.bp},
+if(s>=q.startIndex&&s<=q.endIndex)return new A.bO(B.d.ad(q.startIndex),B.d.ad(q.endIndex))}return B.bp},
 oZ(){var s,r,q,p=this.a
 p===$&&A.b()
 p=J.iX(p.a.getLineMetrics(),t.e)
@@ -28713,10 +28713,10 @@ gUG(){return this.a.ascent},
 gSl(){return this.a.isHardBreak},
 gjv(){return this.a.baseline},
 gc1(a){var s=this.a
-return B.c.aW(s.ascent+s.descent)},
+return B.d.aW(s.ascent+s.descent)},
 gim(a){return this.a.left},
 gcV(a){return this.a.width},
-gGr(a){return B.c.ad(this.a.lineNumber)},
+gGr(a){return B.d.ad(this.a.lineNumber)},
 $imj:1}
 A.a_e.prototype={
 xy(a,b,c,d,e){var s;++this.c
@@ -29067,7 +29067,7 @@ return s<r.length},
 gK(a){return this.$ti.c.a(this.a.item(this.b))}}
 A.e2.prototype={
 gac(a){return new A.PS(this.a,this.$ti.i("PS<1>"))},
-gu(a){return B.c.ad(this.a.length)}}
+gu(a){return B.d.ad(this.a.length)}}
 A.PX.prototype={
 v(){var s=++this.b,r=this.a
 if(s>r.length)throw A.e(A.a8("Iterator out of bounds"))
@@ -29075,7 +29075,7 @@ return s<r.length},
 gK(a){return this.$ti.c.a(this.a.item(this.b))}}
 A.lc.prototype={
 gac(a){return new A.PX(this.a,this.$ti.i("PX<1>"))},
-gu(a){return B.c.ad(this.a.length)}}
+gu(a){return B.d.ad(this.a.length)}}
 A.If.prototype={
 gK(a){var s=this.b
 s===$&&A.b()
@@ -29465,8 +29465,8 @@ $iYI:1}
 A.kc.prototype={
 skq(a,b){var s,r,q=this
 q.a=b
-s=B.c.dK(b.a)-1
-r=B.c.dK(q.a.b)-1
+s=B.d.dK(b.a)-1
+r=B.d.dK(q.a.b)-1
 if(q.z!==s||q.Q!==r){q.z=s
 q.Q=r
 q.Pl()}},
@@ -29733,7 +29733,7 @@ if(s==null&&b.c!=null)p.dk(a,B.ai)
 else p.dk(a,s)
 p.gcz().l0()}},
 pl(a,b,c,d){var s,r,q,p,o,n=this.d,m=A.aND(a.fz(0),c)
-if(m!=null){s=(B.c.aW(0.3*(b.gm(b)>>>24&255))&255)<<24|b.gm(b)&16777215
+if(m!=null){s=(B.d.aW(0.3*(b.gm(b)>>>24&255))&255)<<24|b.gm(b)&16777215
 r=A.aNx(s>>>16&255,s>>>8&255,s&255,255)
 n.gaQ(n).save()
 q=n.gaQ(n)
@@ -29826,8 +29826,8 @@ l=f.KV(a,new A.l(q,m),d)
 k=c.d-o
 if(r){p*=a.gcV(a)/(b.c-e)
 k*=a.gc1(a)/(b.d-b.b)}j=l.style
-i=B.c.a6(p,2)+"px"
-h=B.c.a6(k,2)+"px"
+i=B.d.a6(p,2)+"px"
+h=B.d.a6(k,2)+"px"
 A.x(j,"left","0px")
 A.x(j,"top","0px")
 A.x(j,"width",i)
@@ -30648,7 +30648,7 @@ p=s[o+1]}n=c3.a
 m=c3.b
 l=Math.abs(c4.a)
 k=Math.abs(c4.b)
-if(q===n&&p===m||B.c.ad(l)===0||B.c.ad(k)===0)if(l===0||k===0){c2.cd(0,n,m)
+if(q===n&&p===m||B.d.ad(l)===0||B.d.ad(k)===0)if(l===0||k===0){c2.cd(0,n,m)
 return}j=(q-n)/2
 i=(p-m)/2
 h=Math.cos(0)
@@ -30671,12 +30671,12 @@ a6=Math.atan2(b-a5,c-a4)
 a7=Math.atan2(a0-a5,a-a4)-a6
 if(a7<0)a7+=6.283185307179586
 if(Math.abs(a7)<0.0000031415926535897933){c2.cd(0,n,m)
-return}a8=B.c.dY(Math.abs(a7/2.0943951023931953))
+return}a8=B.d.dY(Math.abs(a7/2.0943951023931953))
 a9=a7/a8
 b0=Math.tan(a9/2)
 if(!isFinite(b0))return
 b1=Math.sqrt(0.5+Math.cos(a9)*0.5)
-b2=Math.abs(1.5707963267948966-Math.abs(a9)-0)<0.000244140625&&B.c.dK(l)===l&&B.c.dK(k)===k&&B.c.dK(n)===n&&B.c.dK(m)===m
+b2=Math.abs(1.5707963267948966-Math.abs(a9)-0)<0.000244140625&&B.d.dK(l)===l&&B.d.dK(k)===k&&B.d.dK(n)===n&&B.d.dK(m)===m
 for(b3=a6,b4=0;b4<a8;++b4,b3=b5){b5=b3+a9
 b6=Math.sin(b5)
 if(Math.abs(b6-0)<0.000244140625)b6=0
@@ -30720,7 +30720,7 @@ r=Math.floor(s+0.5)
 if(Math.abs(s-r-0)<0.000244140625){q=r+1
 if(q<0)q+=4
 p=c>0?0:1
-this.Bs(a,p,B.c.ad(q))
+this.Bs(a,p,B.d.ad(q))
 return}}this.EA(0,a,b,c,!0)},
 dH(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=g.wg(),e=a1.a,d=a1.b,c=a1.c,b=a1.d,a=new A.z(e,d,c,b),a0=a1.e
 if(a0===0||a1.f===0)if(a1.r===0||a1.w===0)if(a1.z===0||a1.Q===0)s=a1.x===0||a1.y===0
@@ -31809,8 +31809,8 @@ k=k.d-k.b
 i=j*k
 h=c.dy
 g=self.window.devicePixelRatio
-if(l.r>=B.c.dY(s*(g===0?1:g))+2){g=self.window.devicePixelRatio
-f=l.w>=B.c.dY(r*(g===0?1:g))+2&&l.ay===h}else f=!1
+if(l.r>=B.d.dY(s*(g===0?1:g))+2){g=self.window.devicePixelRatio
+f=l.w>=B.d.dY(r*(g===0?1:g))+2&&l.ay===h}else f=!1
 e=i<n
 if(f&&e)if(!(e&&p&&i/q>4)){if(j===b&&k===a){o=l
 break}n=i
@@ -32434,11 +32434,11 @@ h.toString
 return h}},
 QT(c7,c8,c9){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0=this,c1="premultipliedAlpha",c2="u_resolution",c3="m_gradient",c4="attachShader",c5=c7.c,c6=c7.a
 c5-=c6
-s=B.c.dY(c5)
+s=B.d.dY(c5)
 r=c7.d
 q=c7.b
 r-=q
-p=B.c.dY(r)
+p=B.d.dY(r)
 if($.atw==null)$.atw=new A.ao7()
 o=$.au9()
 o.b=!0
@@ -32830,7 +32830,7 @@ for(q=0;q<r;++q)s[q].zX()},
 iV(){this.J_()
 A.KX(this)}}
 A.a99.prototype={
-$2(a,b){return B.c.b3(a.c,b.c)},
+$2(a,b){return B.d.b3(a.c,b.c)},
 $S:499}
 A.ni.prototype={
 k(a){return this.ck(0)}}
@@ -32896,8 +32896,8 @@ A.a5j.prototype={
 $1(a){var s,r,q,p=this.a.b
 if(p!=null)p.$2(100,100)
 p=this.b
-s=B.c.ad(p.naturalWidth)
-r=B.c.ad(p.naturalHeight)
+s=B.d.ad(p.naturalWidth)
+r=B.d.ad(p.naturalHeight)
 if(s===0)if(r===0){q=$.ci()
 q=q===B.bB}else q=!1
 else q=!1
@@ -32919,7 +32919,7 @@ if(r!=null)r.$2(100,100)
 r=s.c
 A.e8(r,"load",s.a.a,null)
 A.e8(r,"error",s.d.aK(),null)
-s.e.eb(0,new A.Ag(A.aw5(r,B.c.ad(r.naturalWidth),B.c.ad(r.naturalHeight))))},
+s.e.eb(0,new A.Ag(A.aw5(r,B.d.ad(r.naturalWidth),B.d.ad(r.naturalHeight))))},
 $S:3}
 A.Jb.prototype={
 l(){self.window.URL.revokeObjectURL(this.a)}}
@@ -32961,7 +32961,7 @@ s=7
 return A.B(A.i_(m.tracks.ready,i),$async$on)
 case 7:s=8
 return A.B(A.i_(m.completed,i),$async$on)
-case 8:n.d=B.c.ad(m.tracks.selectedTrack.frameCount)
+case 8:n.d=B.d.ad(m.tracks.selectedTrack.frameCount)
 l=m.tracks.selectedTrack.repetitionCount
 n.e=J.i(l,1/0)?-1:J.aE9(l)
 n.w=m
@@ -33001,7 +33001,7 @@ i===$&&A.b()
 p.r=B.n.dt(j+1,i)
 i=k.duration
 j=i==null?null:i
-j=j==null?null:B.c.ad(j)
+j=j==null?null:B.d.ad(j)
 o=A.cd(j==null?0:j,0,0)
 j=$.bE.by()
 i=$.bE.by().AlphaType.Premul
@@ -33044,7 +33044,7 @@ A.apK.prototype={
 $1(a){var s,r,q,p
 A.aOk()
 this.a.a=!1
-s=B.c.ad(1000*a)
+s=B.d.ad(1000*a)
 A.aOj()
 r=$.b_()
 q=r.x
@@ -33259,9 +33259,9 @@ s=n.c.a
 if(B.rP.am(0,A.je(s))){m=A.je(s)
 m.toString
 m=B.rP.h(0,m)
-r=m==null?null:m[B.c.ad(s.location)]
+r=m==null?null:m[B.d.ad(s.location)]
 r.toString
-return r}if(n.d){q=n.a.c.Vg(A.o_(s),A.je(s),B.c.ad(s.keyCode))
+return r}if(n.d){q=n.a.c.Vg(A.o_(s),A.je(s),B.d.ad(s.keyCode))
 if(q!=null)return q}if(m==="Dead"){m=s.altKey
 p=s.ctrlKey
 o=s.shiftKey
@@ -33338,7 +33338,7 @@ if(!r.CO(r.gM())){s=t.z
 q.nK(0,A.aM(["serialCount",0,"state",r.gM()],s,s),"flutter",r.gkw())}r.e=r.gC4()},
 gC4(){if(this.CO(this.gM())){var s=this.gM()
 s.toString
-return B.c.ad(A.k5(J.bv(t.f.a(s),"serialCount")))}return 0},
+return B.d.ad(A.k5(J.bv(t.f.a(s),"serialCount")))}return 0},
 CO(a){return t.f.b(a)&&J.bv(a,"serialCount")!=null},
 vg(a,b,c){var s,r,q=this.d
 if(q!=null){s=t.z
@@ -33763,7 +33763,7 @@ A.x(p.style,"width","100%")}n.append(p)
 return n},
 $S:90}
 A.a9p.prototype={
-a2c(a,b){var s=t.f.a(a.b),r=J.aK(s),q=B.c.ad(A.hT(r.h(s,"id"))),p=A.bA(r.h(s,"viewType")),o=r.h(s,"params")
+a2c(a,b){var s=t.f.a(a.b),r=J.aK(s),q=B.d.ad(A.hT(r.h(s,"id"))),p=A.bA(r.h(s,"viewType")),o=r.h(s,"params")
 r=this.b
 if(!r.a.am(0,p)){b.$1(B.cZ.n9("unregistered_view_type","If you are the author of the PlatformView, make sure `registerViewFactory` is invoked.","A HtmlElementView widget is trying to create a platform view with an unregistered type: <"+p+">."))
 return}if(r.b.am(0,q)){b.$1(B.cZ.n9("recreating_view","view id: "+q,"trying to create an already created view"))
@@ -33810,9 +33810,9 @@ return Math.abs(b- -3*a)>1},
 a7i(a){var s,r,q,p,o,n=this,m=$.ci()
 if(m===B.bB)return!1
 if(n.Mm(a.deltaX,A.avB(a))||n.Mm(a.deltaY,A.avC(a)))return!1
-if(!(B.c.dt(a.deltaX,120)===0&&B.c.dt(a.deltaY,120)===0)){m=A.avB(a)
-if(B.c.dt(m==null?1:m,120)===0){m=A.avC(a)
-m=B.c.dt(m==null?1:m,120)===0}else m=!1}else m=!0
+if(!(B.d.dt(a.deltaX,120)===0&&B.d.dt(a.deltaY,120)===0)){m=A.avB(a)
+if(B.d.dt(m==null?1:m,120)===0){m=A.avC(a)
+m=B.d.dt(m==null?1:m,120)===0}else m=!1}else m=!0
 if(m){m=a.deltaX
 s=n.f
 r=s==null
@@ -33837,7 +33837,7 @@ if(d.a7i(a)){s=B.b4
 r=-2}else{s=B.b3
 r=-1}q=a.deltaX
 p=a.deltaY
-switch(B.c.ad(a.deltaMode)){case 1:o=$.azi
+switch(B.d.ad(a.deltaMode)){case 1:o=$.azi
 if(o==null){n=A.be(self.document,"div")
 o=n.style
 A.x(o,"font-size","initial")
@@ -33888,7 +33888,7 @@ if(f===0)f=1}g=g.d
 if(g==null){g=self.window.devicePixelRatio
 if(g===0)g=1}e=A.i8(a)
 e.toString
-l.aeH(k,B.c.ad(e),B.cJ,r,s,h*f,j.b*g,1,1,Math.exp(-p/200),B.J2,o)}else{o=A.eV(a)
+l.aeH(k,B.d.ad(e),B.cJ,r,s,h*f,j.b*g,1,1,Math.exp(-p/200),B.J2,o)}else{o=A.eV(a)
 o.toString
 o=A.pL(o)
 $.cy()
@@ -33899,7 +33899,7 @@ if(f===0)f=1}g=g.d
 if(g==null){g=self.window.devicePixelRatio
 if(g===0)g=1}e=A.i8(a)
 e.toString
-l.aeJ(k,B.c.ad(e),B.cJ,r,s,h*f,j.b*g,1,1,q,p,B.J1,o)}d.f=a
+l.aeJ(k,B.d.ad(e),B.cJ,r,s,h*f,j.b*g,1,1,q,p,B.J1,o)}d.f=a
 d.r=s===B.b4
 return k},
 JA(a){var s=this.b,r=t.e.a(A.bq(a)),q=t.K,p=A.ap(A.aM(["capture",!1,"passive",!1],t.N,q))
@@ -33979,7 +33979,7 @@ s.toString
 if(this.N7(s)===B.b3)s=-1
 else{s=A.avx(a)
 s.toString
-s=B.c.ad(s)}return s}}
+s=B.d.ad(s)}return s}}
 A.alr.prototype={
 $0(){return new A.pM()},
 $S:294}
@@ -33996,12 +33996,12 @@ $S:3}
 A.als.prototype={
 $1(a){var s,r,q=this.a,p=q.oo(a),o=A.a([],t.C),n=q.Ci(p),m=A.i8(a)
 m.toString
-s=n.v7(B.c.ad(m))
+s=n.v7(B.d.ad(m))
 if(s!=null)q.fV(o,s,a)
-m=B.c.ad(a.button)
+m=B.d.ad(a.button)
 r=A.i8(a)
 r.toString
-q.fV(o,n.I0(m,B.c.ad(r)),a)
+q.fV(o,n.I0(m,B.d.ad(r)),a)
 q.c.$1(o)},
 $S:9}
 A.alt.prototype={
@@ -34010,17 +34010,17 @@ for(s=J.aH(o.a3b(a));s.v();){r=s.gK(s)
 q=r.buttons
 if(q==null)q=null
 q.toString
-p=n.v7(B.c.ad(q))
+p=n.v7(B.d.ad(q))
 if(p!=null)o.fV(m,p,r)
 q=r.buttons
 if(q==null)q=null
 q.toString
-o.fV(m,n.Av(B.c.ad(q)),r)}o.c.$1(m)},
+o.fV(m,n.Av(B.d.ad(q)),r)}o.c.$1(m)},
 $S:9}
 A.alu.prototype={
 $1(a){var s,r=this.a,q=r.Ci(r.oo(a)),p=A.a([],t.C),o=A.i8(a)
 o.toString
-s=q.I1(B.c.ad(o))
+s=q.I1(B.d.ad(o))
 if(s!=null){r.fV(p,s,a)
 r.c.$1(p)}},
 $S:9}
@@ -34030,7 +34030,7 @@ if(n.am(0,o)){s=A.a([],t.C)
 n=n.h(0,o)
 n.toString
 r=A.i8(a)
-q=n.I2(r==null?null:B.c.ad(r))
+q=n.I2(r==null?null:B.d.ad(r))
 p.Nm(a)
 if(q!=null){p.fV(s,q,a)
 p.c.$1(s)}}},
@@ -34057,7 +34057,7 @@ s.vE(r,"touchend",new A.anT(s))
 s.vE(r,"touchcancel",new A.anU(s))},
 vP(a,b,c,d,e){var s,r,q,p,o,n=A.aFX(e)
 n.toString
-n=B.c.ad(n)
+n=B.d.ad(n)
 s=e.clientX
 $.cy()
 r=$.bM()
@@ -34084,10 +34084,10 @@ n=o.identifier
 if(n==null)n=null
 n.toString
 m=p.w
-if(!m.q(0,B.c.ad(n))){n=o.identifier
+if(!m.q(0,B.d.ad(n))){n=o.identifier
 if(n==null)n=null
 n.toString
-m.H(0,B.c.ad(n))
+m.H(0,B.d.ad(n))
 p.vP(B.wA,r,!0,s,o)}}p.c.$1(r)},
 $S:9}
 A.anS.prototype={
@@ -34101,7 +34101,7 @@ for(s=t.e,p=t.VA,p=A.cb(new A.lc(a.changedTouches,p),p.i("q.E"),s),s=A.cb(p.a,A.
 m=n.identifier
 if(m==null)m=null
 m.toString
-if(o.w.q(0,B.c.ad(m)))o.vP(B.er,q,!0,r,n)}o.c.$1(q)},
+if(o.w.q(0,B.d.ad(m)))o.vP(B.er,q,!0,r,n)}o.c.$1(q)},
 $S:9}
 A.anT.prototype={
 $1(a){var s,r,q,p,o,n,m,l
@@ -34115,10 +34115,10 @@ m=n.identifier
 if(m==null)m=null
 m.toString
 l=o.w
-if(l.q(0,B.c.ad(m))){m=n.identifier
+if(l.q(0,B.d.ad(m))){m=n.identifier
 if(m==null)m=null
 m.toString
-l.D(0,B.c.ad(m))
+l.D(0,B.d.ad(m))
 o.vP(B.jB,q,!1,r,n)}}o.c.$1(q)},
 $S:9}
 A.anU.prototype={
@@ -34131,10 +34131,10 @@ n=o.identifier
 if(n==null)n=null
 n.toString
 m=p.w
-if(m.q(0,B.c.ad(n))){n=o.identifier
+if(m.q(0,B.d.ad(n))){n=o.identifier
 if(n==null)n=null
 n.toString
-m.D(0,B.c.ad(n))
+m.D(0,B.d.ad(n))
 p.vP(B.jz,r,!1,s,o)}}p.c.$1(r)},
 $S:9}
 A.al0.prototype={
@@ -34165,34 +34165,34 @@ $S:3}
 A.al2.prototype={
 $1(a){var s,r,q=A.a([],t.C),p=this.a,o=p.w,n=A.i8(a)
 n.toString
-s=o.v7(B.c.ad(n))
+s=o.v7(B.d.ad(n))
 if(s!=null)p.fV(q,s,a)
-n=B.c.ad(a.button)
+n=B.d.ad(a.button)
 r=A.i8(a)
 r.toString
-p.fV(q,o.I0(n,B.c.ad(r)),a)
+p.fV(q,o.I0(n,B.d.ad(r)),a)
 p.c.$1(q)},
 $S:9}
 A.al3.prototype={
 $1(a){var s,r=A.a([],t.C),q=this.a,p=q.w,o=A.i8(a)
 o.toString
-s=p.v7(B.c.ad(o))
+s=p.v7(B.d.ad(o))
 if(s!=null)q.fV(r,s,a)
 o=A.i8(a)
 o.toString
-q.fV(r,p.Av(B.c.ad(o)),a)
+q.fV(r,p.Av(B.d.ad(o)),a)
 q.c.$1(r)},
 $S:9}
 A.al4.prototype={
 $1(a){var s,r=A.a([],t.C),q=this.a,p=A.i8(a)
 p.toString
-s=q.w.I1(B.c.ad(p))
+s=q.w.I1(B.d.ad(p))
 if(s!=null){q.fV(r,s,a)
 q.c.$1(r)}},
 $S:9}
 A.al5.prototype={
 $1(a){var s,r=A.a([],t.C),q=this.a,p=A.i8(a)
-p=p==null?null:B.c.ad(p)
+p=p==null?null:B.d.ad(p)
 s=q.w.I2(p)
 if(s!=null){q.fV(r,s,a)
 q.c.$1(r)}},
@@ -34315,7 +34315,7 @@ m.d=r}else{if(A.je(a)==="Meta"){r=$.dt()
 r=r===B.jt}else r=!1
 if(r){r=o|8
 m.d=r}else r=o}else r=o
-n=A.aM(["type",a.type,"keymap","web","code",A.o_(a),"key",A.je(a),"location",B.c.ad(a.location),"metaState",r,"keyCode",B.c.ad(a.keyCode)],t.N,t.z)
+n=A.aM(["type",a.type,"keymap","web","code",A.o_(a),"key",A.je(a),"location",B.d.ad(a.location),"metaState",r,"keyCode",B.d.ad(a.keyCode)],t.N,t.z)
 $.b_().j3("flutter/keyevent",B.a6.c8(n),new A.aa1(s))}}
 A.a9X.prototype={
 $1(a){this.a.LV(a)},
@@ -34330,7 +34330,7 @@ A.aa0.prototype={
 $0(){var s,r,q=this.a
 q.a.D(0,this.b)
 s=this.c.a
-r=A.aM(["type","keyup","keymap","web","code",A.o_(s),"key",A.je(s),"location",B.c.ad(s.location),"metaState",q.d,"keyCode",B.c.ad(s.keyCode)],t.N,t.z)
+r=A.aM(["type","keyup","keymap","web","code",A.o_(s),"key",A.je(s),"location",B.d.ad(s.location),"metaState",q.d,"keyCode",B.d.ad(s.keyCode)],t.N,t.z)
 $.b_().j3("flutter/keyevent",B.a6.c8(r),A.aM4())},
 $S:0}
 A.aa1.prototype={
@@ -34707,8 +34707,8 @@ gKT(){var s=this.b,r=s.b
 r.toString
 r=(r&32)!==0||(r&16)!==0
 s=s.k2
-if(r)return B.c.ad(s.scrollTop)
-else return B.c.ad(s.scrollLeft)},
+if(r)return B.d.ad(s.scrollTop)
+else return B.d.ad(s.scrollLeft)},
 MK(){var s,r,q,p,o=this,n="transform",m=o.b,l=m.k2,k=m.y
 if(k==null){$.dB().$1("Warning! the rect attribute of semanticsObject is null")
 return}s=m.b
@@ -34717,20 +34717,20 @@ s=(s&32)!==0||(s&16)!==0
 r=o.f
 q=k.d-k.b
 p=k.c-k.a
-if(s){s=B.c.dY(q)
+if(s){s=B.d.dY(q)
 r=r.style
 A.x(r,n,"translate(0px,"+(s+10)+"px)")
-A.x(r,"width",""+B.c.aW(p)+"px")
+A.x(r,"width",""+B.d.aW(p)+"px")
 A.x(r,"height","10px")
 l.scrollTop=10
-m.p3=o.w=B.c.ad(l.scrollTop)
-m.p4=0}else{s=B.c.dY(p)
+m.p3=o.w=B.d.ad(l.scrollTop)
+m.p4=0}else{s=B.d.dY(p)
 r=r.style
 A.x(r,n,"translate("+(s+10)+"px,0px)")
 A.x(r,"width","10px")
-A.x(r,"height",""+B.c.aW(q)+"px")
+A.x(r,"height",""+B.d.aW(q)+"px")
 l.scrollLeft=10
-q=B.c.ad(l.scrollLeft)
+q=B.d.ad(l.scrollLeft)
 o.w=q
 m.p3=0
 m.p4=q}},
@@ -35793,7 +35793,7 @@ b0.setProperty("color",f,"")}f=g.cx
 a=f==null?a8:f.gar(f)
 if(a!=null){f=A.d4(a.a)
 b0.setProperty("background-color",f,"")}a0=g.at
-if(a0!=null){f=B.c.dK(a0)
+if(a0!=null){f=B.d.dK(a0)
 b0.setProperty("font-size",""+f+"px","")}f=g.f
 if(f!=null){f=A.aAC(f)
 f.toString
@@ -36863,7 +36863,7 @@ s=p.at
 r=p.gRs()
 q=""+"normal "
 o=(o!=null?q+A.m(A.aAC(o)):q+"normal")+" "
-o=s!=null?o+B.c.dK(s):o+"14"
+o=s!=null?o+B.d.dK(s):o+"14"
 r=o+"px "+A.m(A.api(r))
 r=p.dx=r.charCodeAt(0)==0?r:r
 o=r}return o},
@@ -36919,14 +36919,14 @@ q=j.a
 p=q.a
 o=r.a
 n=o.style
-A.x(n,"font-size",""+B.c.dK(q.b)+"px")
+A.x(n,"font-size",""+B.d.dK(q.b)+"px")
 m=A.api(p)
 m.toString
 A.x(n,"font-family",m)
 l=q.c
 if(l==null)k=p==="FlutterTest"?1:null
 else k=l
-if(k!=null)A.x(n,"line-height",B.c.k(k))
+if(k!=null)A.x(n,"line-height",B.d.k(k))
 r.b=null
 A.x(o.style,"white-space","pre")
 r.b=null
@@ -39145,7 +39145,7 @@ m=new A.ev(t.Hf)
 for(l=0;l<q;++l)m.n(0,new A.l_(r.h(s,l)),o.h(p,n+l))
 return new A.nQ(m,t.qO)}}
 A.a9N.prototype={
-$0(){return B.c.dK(1000*this.a.now())},
+$0(){return B.d.dK(1000*this.a.now())},
 $S:53}
 A.a9M.prototype={
 $2(a,b){var s=this.a
@@ -41736,7 +41736,7 @@ $S:87}
 A.ako.prototype={
 gN2(){var s=this.c
 return s instanceof A.c7?s.k(0):null},
-alJ(a){this.c.uX(0,B.c.k(a))},
+alJ(a){this.c.uX(0,B.d.k(a))},
 hb(a){this.c.uX(0,a)},
 Ah(a,b,c){this.c.uX(0,B.e.W(a,b,c))},
 dF(a){this.c.dF(a)}}
@@ -41937,7 +41937,7 @@ $ibN:1}
 A.aX.prototype={
 S(a,b){return new A.aX(this.a+b.a)},
 X(a,b){return new A.aX(this.a-b.a)},
-ah(a,b){return new A.aX(B.c.aW(this.a*b))},
+ah(a,b){return new A.aX(B.d.aW(this.a*b))},
 j(a,b){if(b==null)return!1
 return b instanceof A.aX&&this.a===b.a},
 gB(a){return B.n.gB(this.a)},
@@ -43684,7 +43684,7 @@ A.Kq.prototype={
 j(a,b){if(b==null)return!1
 return b instanceof A.Kq&&b.a===this.a&&b.b===this.b},
 gB(a){return A.V(this.a,this.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){return"OffsetBase("+B.c.a6(this.a,1)+", "+B.c.a6(this.b,1)+")"}}
+k(a){return"OffsetBase("+B.d.a6(this.a,1)+", "+B.d.a6(this.b,1)+")"}}
 A.l.prototype={
 gcG(){var s=this.a,r=this.b
 return Math.sqrt(s*s+r*r)},
@@ -43697,7 +43697,7 @@ fw(a,b){return new A.l(this.a/b,this.b/b)},
 j(a,b){if(b==null)return!1
 return b instanceof A.l&&b.a===this.a&&b.b===this.b},
 gB(a){return A.V(this.a,this.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){return"Offset("+B.c.a6(this.a,1)+", "+B.c.a6(this.b,1)+")"}}
+k(a){return"Offset("+B.d.a6(this.a,1)+", "+B.d.a6(this.b,1)+")"}}
 A.R.prototype={
 gaa(a){return this.a<=0||this.b<=0},
 X(a,b){var s=this
@@ -43717,7 +43717,7 @@ return s},
 j(a,b){if(b==null)return!1
 return b instanceof A.R&&b.a===this.a&&b.b===this.b},
 gB(a){return A.V(this.a,this.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){return"Size("+B.c.a6(this.a,1)+", "+B.c.a6(this.b,1)+")"}}
+k(a){return"Size("+B.d.a6(this.a,1)+", "+B.d.a6(this.b,1)+")"}}
 A.z.prototype={
 gu0(a){var s=this
 return isFinite(s.a)&&isFinite(s.b)&&isFinite(s.c)&&isFinite(s.d)},
@@ -43760,7 +43760,7 @@ return b instanceof A.z&&b.a===s.a&&b.b===s.b&&b.c===s.c&&b.d===s.d},
 gB(a){var s=this
 return A.V(s.a,s.b,s.c,s.d,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){var s=this
-return"Rect.fromLTRB("+B.c.a6(s.a,1)+", "+B.c.a6(s.b,1)+", "+B.c.a6(s.c,1)+", "+B.c.a6(s.d,1)+")"}}
+return"Rect.fromLTRB("+B.d.a6(s.a,1)+", "+B.d.a6(s.b,1)+", "+B.d.a6(s.c,1)+", "+B.d.a6(s.d,1)+")"}}
 A.aO.prototype={
 i8(a,b){return new A.aO(A.I(this.a,b.a,1/0),A.I(this.b,b.b,1/0))},
 X(a,b){return new A.aO(this.a-b.a,this.b-b.b)},
@@ -43773,7 +43773,7 @@ if(A.y(s)!==J.W(b))return!1
 return b instanceof A.aO&&b.a===s.a&&b.b===s.b},
 gB(a){return A.V(this.a,this.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){var s=this.a,r=this.b
-return s===r?"Radius.circular("+B.c.a6(s,1)+")":"Radius.elliptical("+B.c.a6(s,1)+", "+B.c.a6(r,1)+")"}}
+return s===r?"Radius.circular("+B.d.a6(s,1)+")":"Radius.elliptical("+B.d.a6(s,1)+", "+B.d.a6(r,1)+")"}}
 A.hy.prototype={
 ce(a){var s=this,r=a.a,q=a.b
 return new A.hy(s.a+r,s.b+q,s.c+r,s.d+q,s.e,s.f,s.r,s.w,s.x,s.y,s.z,s.Q,!1)},
@@ -43815,17 +43815,17 @@ if(A.y(s)!==J.W(b))return!1
 return b instanceof A.hy&&b.a===s.a&&b.b===s.b&&b.c===s.c&&b.d===s.d&&b.e===s.e&&b.f===s.f&&b.r===s.r&&b.w===s.w&&b.z===s.z&&b.Q===s.Q&&b.x===s.x&&b.y===s.y},
 gB(a){var s=this
 return A.V(s.a,s.b,s.c,s.d,s.e,s.f,s.r,s.w,s.z,s.Q,s.x,s.y,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){var s,r,q=this,p=B.c.a6(q.a,1)+", "+B.c.a6(q.b,1)+", "+B.c.a6(q.c,1)+", "+B.c.a6(q.d,1),o=q.e,n=q.f,m=q.r,l=q.w
+k(a){var s,r,q=this,p=B.d.a6(q.a,1)+", "+B.d.a6(q.b,1)+", "+B.d.a6(q.c,1)+", "+B.d.a6(q.d,1),o=q.e,n=q.f,m=q.r,l=q.w
 if(new A.aO(o,n).j(0,new A.aO(m,l))){s=q.x
 r=q.y
 s=new A.aO(m,l).j(0,new A.aO(s,r))&&new A.aO(s,r).j(0,new A.aO(q.z,q.Q))}else s=!1
-if(s){if(o===n)return"RRect.fromLTRBR("+p+", "+B.c.a6(o,1)+")"
-return"RRect.fromLTRBXY("+p+", "+B.c.a6(o,1)+", "+B.c.a6(n,1)+")"}return"RRect.fromLTRBAndCorners("+p+", topLeft: "+new A.aO(o,n).k(0)+", topRight: "+new A.aO(m,l).k(0)+", bottomRight: "+new A.aO(q.x,q.y).k(0)+", bottomLeft: "+new A.aO(q.z,q.Q).k(0)+")"}}
+if(s){if(o===n)return"RRect.fromLTRBR("+p+", "+B.d.a6(o,1)+")"
+return"RRect.fromLTRBXY("+p+", "+B.d.a6(o,1)+", "+B.d.a6(n,1)+")"}return"RRect.fromLTRBAndCorners("+p+", topLeft: "+new A.aO(o,n).k(0)+", topRight: "+new A.aO(m,l).k(0)+", bottomRight: "+new A.aO(q.x,q.y).k(0)+", bottomLeft: "+new A.aO(q.z,q.Q).k(0)+")"}}
 A.xS.prototype={
 J(){return"KeyEventType."+this.b}}
 A.fo.prototype={
 a7A(){var s=this.d
-return"0x"+B.n.jV(s,16)+new A.a6C(B.c.dK(s/4294967296)).$0()},
+return"0x"+B.n.jV(s,16)+new A.a6C(B.d.dK(s/4294967296)).$0()},
 a35(){var s=this.e
 if(s==null)return"<none>"
 switch(s){case"\n":return'"\\n"'
@@ -43873,7 +43873,7 @@ A.rQ.prototype={
 j(a,b){if(b==null)return!1
 return b instanceof A.rQ&&b.a===this.a&&b.b===this.b},
 gB(a){return A.V(this.a,this.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){return"MaskFilter.blur("+this.a.k(0)+", "+B.c.a6(this.b,1)+")"}}
+k(a){return"MaskFilter.blur("+this.a.k(0)+", "+B.d.a6(this.b,1)+")"}}
 A.ob.prototype={
 J(){return"FilterQuality."+this.b}}
 A.arr.prototype={}
@@ -43983,7 +43983,7 @@ return b instanceof A.dK&&b.a===s.a&&b.b===s.b&&b.c===s.c&&b.d===s.d&&b.e===s.e}
 gB(a){var s=this
 return A.V(s.a,s.b,s.c,s.d,s.e,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){var s=this
-return"TextBox.fromLTRBD("+B.c.a6(s.a,1)+", "+B.c.a6(s.b,1)+", "+B.c.a6(s.c,1)+", "+B.c.a6(s.d,1)+", "+s.e.k(0)+")"}}
+return"TextBox.fromLTRBD("+B.d.a6(s.a,1)+", "+B.d.a6(s.b,1)+", "+B.d.a6(s.c,1)+", "+B.d.a6(s.d,1)+", "+s.e.k(0)+")"}}
 A.AP.prototype={
 J(){return"TextAffinity."+this.b}}
 A.b1.prototype={
@@ -44003,7 +44003,7 @@ A.mv.prototype={
 j(a,b){if(b==null)return!1
 if(J.W(b)!==A.y(this))return!1
 return b instanceof A.mv&&b.a===this.a},
-gB(a){return B.c.gB(this.a)},
+gB(a){return B.d.gB(this.a)},
 k(a){return A.y(this).k(0)+"(width: "+A.m(this.a)+")"}}
 A.GP.prototype={
 J(){return"BoxHeightStyle."+this.b}}
@@ -44225,7 +44225,7 @@ p.w=B.Al
 q=t.gQ.a(B.b.gc7(p.f.b.f))
 o=q.gus(q)
 o.toString
-o=B.c.aW(o)
+o=B.d.aW(o)
 p.a.toString
 p.f.b.adt(o+1,B.aO,B.C8).bO(0,new A.ZY(p,r),t.H)},
 $S:91}
@@ -44632,7 +44632,7 @@ if(m.z===B.eR&&m.f!=null){l=m.f
 l.toString
 p=l}else{l=m.e
 l.toString
-p=l}o=new A.aX(B.c.aW(p.a*q))}else{l=m.x
+p=l}o=new A.aX(B.d.aW(p.a*q))}else{l=m.x
 l===$&&A.b()
 o=a===l?B.y:c}m.ez(0)
 l=o.a
@@ -44702,7 +44702,7 @@ else s=r.b?"; silenced":""
 r=this.B_()
 q=this.x
 q===$&&A.b()
-return r+" "+B.c.a6(q,3)+p+s}}
+return r+" "+B.d.a6(q,3)+p+s}}
 A.akk.prototype={
 eh(a,b){var s,r,q=this,p=A.I(b/q.b,0,1)
 if(p===0)return q.c
@@ -44713,8 +44713,8 @@ return r+(s-r)*q.e.ab(0,p)}}},
 eZ(a,b){return(this.eh(0,b+0.001)-this.eh(0,b-0.001))/0.002},
 kI(a){return a>this.b}}
 A.amk.prototype={
-eh(a,b){var s,r,q,p=this,o=b+p.r,n=p.f,m=B.c.dt(o/n,1)
-n=B.c.iG(o,n)
+eh(a,b){var s,r,q,p=this,o=b+p.r,n=p.f,m=B.d.dt(o/n,1)
+n=B.d.iG(o,n)
 s=p.e
 r=p.c
 q=p.b
@@ -44784,7 +44784,7 @@ if(s!=null)s=s.gm(s)
 else{s=this.b
 s.toString}return s},
 k(a){var s=this,r=s.c
-if(r==null)return"ProxyAnimation(null; "+s.B_()+" "+B.c.a6(s.gm(s),3)+")"
+if(r==null)return"ProxyAnimation(null; "+s.B_()+" "+B.d.a6(s.gm(s),3)+")"
 return r.k(0)+"\u27a9ProxyAnimation"}}
 A.iv.prototype={
 V(a,b){this.bq()
@@ -44944,7 +44944,7 @@ if(Math.abs(a-n)<0.001)return m.L5(m.b,m.d,o)
 if(n<a)q=o
 else p=o}},
 k(a){var s=this
-return"Cubic("+B.c.a6(s.a,2)+", "+B.c.a6(s.b,2)+", "+B.c.a6(s.c,2)+", "+B.c.a6(s.d,2)+")"}}
+return"Cubic("+B.d.a6(s.a,2)+", "+B.d.a6(s.b,2)+", "+B.d.a6(s.c,2)+", "+B.d.a6(s.d,2)+")"}}
 A.B8.prototype={
 me(a){var s,r=this,q=r.c,p=q.a,o=a<p,n=o?p:1-p,m=q.b,l=o?m:1-m,k=(a-(o?0:p))/n
 if(o){q=r.a
@@ -45033,7 +45033,7 @@ er(a){var s,r=this.a
 r.toString
 s=this.b
 s.toString
-return B.c.aW(r+(s-r)*a)}}
+return B.d.aW(r+(s-r)*a)}}
 A.fh.prototype={
 ab(a,b){if(b===0||b===1)return b
 return this.a.ab(0,b)},
@@ -45373,7 +45373,7 @@ q=r.x
 q===$&&A.b()
 q=A.a1(800,0,q)
 q.toString
-q=A.cd(0,Math.min(B.c.dK(q),300),0)
+q=A.cd(0,Math.min(B.d.dK(q),300),0)
 r.z=B.ax
 r.jl(1,B.lT,q)}else{o.b.dO()
 r=o.a
@@ -45382,7 +45382,7 @@ if(q!=null&&q.a!=null){q=r.x
 q===$&&A.b()
 q=A.a1(0,800,q)
 q.toString
-q=A.cd(0,B.c.dK(q),0)
+q=A.cd(0,B.d.dK(q),0)
 r.z=B.eR
 r.jl(0,B.lT,q)}}q=r.r
 if(q!=null&&q.a!=null){p=A.ba("animationStatusCallback")
@@ -47215,9 +47215,9 @@ A.a9D.prototype={
 k(a){var s=this.a,r=A.bF(s).i("ah<a7.E,v>"),q=A.or(A.an(new A.ah(s,new A.a9E(),r),!0,r.i("bp.E")),"[","]")
 r=this.b
 r===$&&A.b()
-return"PolynomialFit("+q+", confidence: "+B.c.a6(r,3)+")"}}
+return"PolynomialFit("+q+", confidence: "+B.d.a6(r,3)+")"}}
 A.a9E.prototype={
-$1(a){return B.c.ala(a,3)},
+$1(a){return B.d.ala(a,3)},
 $S:420}
 A.JA.prototype={
 Iz(a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4=this.a,a5=a4.length
@@ -48045,10 +48045,10 @@ return b instanceof A.hO&&b.a.j(0,this.a)},
 gB(a){var s=this.a
 return A.V(s.a,s.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){var s=this.a
-return"Velocity("+B.c.a6(s.a,1)+", "+B.c.a6(s.b,1)+")"}}
+return"Velocity("+B.d.a6(s.a,1)+", "+B.d.a6(s.b,1)+")"}}
 A.n5.prototype={
 k(a){var s=this,r=s.a
-return"VelocityEstimate("+B.c.a6(r.a,1)+", "+B.c.a6(r.b,1)+"; offset: "+s.d.k(0)+", duration: "+s.c.k(0)+", confidence: "+B.c.a6(s.b,1)+")"}}
+return"VelocityEstimate("+B.d.a6(r.a,1)+", "+B.d.a6(r.b,1)+"; offset: "+s.d.k(0)+", duration: "+s.c.k(0)+", confidence: "+B.d.a6(s.b,1)+")"}}
 A.Dq.prototype={
 k(a){return"_PointAtTime("+this.b.k(0)+" at "+this.a.k(0)+")"}}
 A.iI.prototype={
@@ -48404,9 +48404,9 @@ g=b5==null?a7:b5.bG(n)}b5=a6.a.dy
 if(b5!==1){f=B.Dg.ab(0,b5)
 if((g==null?a7:g.b)!=null){b5=g.b
 b5.toString
-g=g.bG(A.Y(B.c.aW(255*f),b5.gm(b5)>>>16&255,b5.gm(b5)>>>8&255,b5.gm(b5)&255))}if((h==null?a7:h.b)!=null){b5=h.b
+g=g.bG(A.Y(B.d.aW(255*f),b5.gm(b5)>>>16&255,b5.gm(b5)>>>8&255,b5.gm(b5)&255))}if((h==null?a7:h.b)!=null){b5=h.b
 b5.toString
-h=h.bG(A.Y(B.c.aW(255*f),b5.gm(b5)>>>16&255,b5.gm(b5)>>>8&255,b5.gm(b5)&255))}b5=j.gcX(j)
+h=h.bG(A.Y(B.d.aW(255*f),b5.gm(b5)>>>16&255,b5.gm(b5)>>>8&255,b5.gm(b5)&255))}b5=j.gcX(j)
 k=j.EU(f*(b5==null?1:b5))
 b5=i.gcX(i)
 i=i.EU(f*(b5==null?1:b5))}else k=j
@@ -48486,7 +48486,7 @@ m=m?A.bX(j,l,!1,j,j,!1,j,j,!0,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j):l
 l=s?k.r:0
 i=i?1:A.I(h/f,0,1)
 return A.avR(A.auE(k.d,k.ax,!0,k.Q,k.f,i,k.ch,k.ok,l,!1,m,!1,k.as,k.at,k.a,k.go,!0,k.w,k.x,k.fx,k.y,k.k2,p,k.cx,k.k1,e,r,k.id),n,!0,s,o,g,r)},
-k(a){return"<optimized out>#"+A.b8(this)+"(topPadding: "+B.c.a6(this.dx,1)+", bottomHeight: "+B.n.a6(this.k3,1)+", ...)"}}
+k(a){return"<optimized out>#"+A.b8(this)+"(topPadding: "+B.d.a6(this.dx,1)+", bottomHeight: "+B.n.a6(this.k3,1)+", ...)"}}
 A.Am.prototype={
 ai(){return new A.Us(null,null,B.o)}}
 A.Us.prototype={
@@ -50205,7 +50205,7 @@ m=d.f
 if(m>0){l=n.p2.r
 r=l.b
 r.toString
-l=l.bG(A.Y(B.c.aW(255*m),r.gm(r)>>>16&255,r.gm(r)>>>8&255,r.gm(r)&255))
+l=l.bG(A.Y(B.d.aW(255*m),r.gm(r)>>>16&255,r.gm(r)>>>8&255,r.gm(r)&255))
 k=q.a3V(n)
 q.a.toString
 if(k)d=d.z!==!0
@@ -50988,7 +50988,7 @@ o.cx=new A.am(r.a(n),new A.mb(l>>>24&255,0),t.gD.i("am<ak.T>"))
 e.xw(o)
 return o}}
 A.xF.prototype={
-t_(a){var s=B.c.dK(this.as/1),r=this.CW
+t_(a){var s=B.d.dK(this.as/1),r=this.CW
 r===$&&A.b()
 r.e=A.cd(0,s,0)
 r.bI(0)
@@ -53669,7 +53669,7 @@ if(r>0){s=a.gbY(a)
 q=b.a
 p=b.b
 o=$.af().bp()
-o.sar(0,A.Y(B.c.aW(255*r),0,0,0))
+o.sar(0,A.Y(B.d.aW(255*r),0,0,0))
 s.cN(new A.z(q,p,q+c.a,p+c.b),o)}},
 pV(a,b,c,d){var s,r,q=this,p=q.w
 switch(p.gb0(p).a){case 3:case 0:return d.$2(a,b)
@@ -53703,7 +53703,7 @@ return s}}
 A.aof.prototype={
 $2(a,b){var s=this.a,r=s.Q
 s=s.y
-r.saB(0,a.TK(b,B.c.aW(s.gm(s)*255),this.b,r.a))},
+r.saB(0,a.TK(b,B.d.aW(s.gm(s)*255),this.b,r.a))},
 $S:12}
 A.Fb.prototype={
 Dm(a){this.aC()},
@@ -53736,7 +53736,7 @@ r.di()}}
 A.aog.prototype={
 $2(a,b){var s=this.a,r=s.Q
 s=s.x
-r.saB(0,a.TK(b,B.c.aW(s.gm(s)*255),this.b,r.a))},
+r.saB(0,a.TK(b,B.d.aW(s.gm(s)*255),this.b,r.a))},
 $S:12}
 A.Sh.prototype={}
 A.FE.prototype={
@@ -54546,13 +54546,13 @@ o=k>>>16&255
 n=k>>>8&255
 k&=255
 r.b=A.Y(153,o,n,k)
-q.b=A.Y(B.c.aW(127.5),o,n,k)
+q.b=A.Y(B.d.aW(127.5),o,n,k)
 m=l.fx
 m===$&&A.b()
 if(m){k=l.c
 k.toString
 k=A.a2(k).cy.a
-k=A.Y(255,k>>>16&255,k>>>8&255,k&255)}else k=A.Y(B.c.aW(25.5),o,n,k)
+k=A.Y(255,k>>>16&255,k>>>8&255,k&255)}else k=A.Y(B.d.aW(25.5),o,n,k)
 p.b=k
 break
 case 0:k=s.a
@@ -54566,7 +54566,7 @@ m===$&&A.b()
 if(m){k=l.c
 k.toString
 k=A.a2(k).cy.a
-k=A.Y(255,k>>>16&255,k>>>8&255,k&255)}else k=A.Y(B.c.aW(76.5),o,n,k)
+k=A.Y(255,k>>>16&255,k>>>8&255,k&255)}else k=A.Y(B.d.aW(76.5),o,n,k)
 p.b=k
 break}return new A.bH(new A.akJ(l,r,q,p),t.h2)},
 gac_(){var s=this.dy
@@ -54707,7 +54707,7 @@ s===$&&A.b()
 s=s.x
 s=s==null?null:s.Z(a)
 if(s==null){s=this.c.a
-s=this.b===B.ae?A.Y(B.c.aW(25.5),s>>>16&255,s>>>8&255,s&255):A.Y(64,s>>>16&255,s>>>8&255,s&255)}return s}return B.I},
+s=this.b===B.ae?A.Y(B.d.aW(25.5),s>>>16&255,s>>>8&255,s&255):A.Y(64,s>>>16&255,s>>>8&255,s&255)}return s}return B.I},
 $S:7}
 A.akI.prototype={
 $1(a){var s,r
@@ -56272,7 +56272,7 @@ s=!1}else{j=a2
 k=j
 s=!1}if(s){s=k.z
 s.toString
-s=new A.ds(s.EV(B.r,A.ay2(j)),new A.cj(A.Y(B.c.aW(229.5),255,255,255),a2,a2,B.c4,a2,a2,B.ah))
+s=new A.ds(s.EV(B.r,A.ay2(j)),new A.cj(A.Y(B.d.aW(229.5),255,255,255),a2,a2,B.c4,a2,a2,B.ah))
 break $label0$0}if(B.ae===n.O())if(m.O() instanceof A.dc){k=m.O()
 if(l.O() instanceof A.dx){j=l.O()
 s=!0}else{j=a2
@@ -56282,7 +56282,7 @@ s=!1}else{j=a2
 k=j
 s=!1}if(s){s=k.z
 s.toString
-s=new A.ds(s.EV(B.h,A.ay2(j)),new A.cj(A.Y(B.c.aW(229.5),97,97,97),a2,a2,B.c4,a2,a2,B.ah))
+s=new A.ds(s.EV(B.h,A.ay2(j)),new A.cj(A.Y(B.d.aW(229.5),97,97,97),a2,a2,B.c4,a2,a2,B.ah))
 break $label0$0}s=a2}i=A.bg("#1#1",new A.afG(s))
 h=A.bg("#1#2",new A.afH(s))
 if(i.O() instanceof A.t){g=i.O()
@@ -56571,7 +56571,7 @@ return new A.D8(s.geS().X(0,a.geS()),s.gho().X(0,a.gho()),s.ghf().X(0,a.ghf()),s
 H(a,b){var s=this
 return new A.D8(s.geS().S(0,b.geS()),s.gho().S(0,b.gho()),s.ghf().S(0,b.ghf()),s.ghZ().S(0,b.ghZ()),s.geT().S(0,b.geT()),s.ghn().S(0,b.ghn()),s.gi_().S(0,b.gi_()),s.ghe().S(0,b.ghe()))},
 k(a){var s,r,q,p,o=this
-if(o.geS().j(0,o.gho())&&o.gho().j(0,o.ghf())&&o.ghf().j(0,o.ghZ()))if(!o.geS().j(0,B.D))s=o.geS().a===o.geS().b?"BorderRadius.circular("+B.c.a6(o.geS().a,1)+")":"BorderRadius.all("+o.geS().k(0)+")"
+if(o.geS().j(0,o.gho())&&o.gho().j(0,o.ghf())&&o.ghf().j(0,o.ghZ()))if(!o.geS().j(0,B.D))s=o.geS().a===o.geS().b?"BorderRadius.circular("+B.d.a6(o.geS().a,1)+")":"BorderRadius.all("+o.geS().k(0)+")"
 else s=null
 else{r=""+"BorderRadius.only("
 if(!o.geS().j(0,B.D)){r+="topLeft: "+o.geS().k(0)
@@ -56582,7 +56582,7 @@ q=!0}if(!o.ghf().j(0,B.D)){if(q)r+=", "
 r+="bottomLeft: "+o.ghf().k(0)
 q=!0}if(!o.ghZ().j(0,B.D)){if(q)r+=", "
 r+="bottomRight: "+o.ghZ().k(0)}r+=")"
-s=r.charCodeAt(0)==0?r:r}if(o.geT().j(0,o.ghn())&&o.ghn().j(0,o.ghe())&&o.ghe().j(0,o.gi_()))if(!o.geT().j(0,B.D))p=o.geT().a===o.geT().b?"BorderRadiusDirectional.circular("+B.c.a6(o.geT().a,1)+")":"BorderRadiusDirectional.all("+o.geT().k(0)+")"
+s=r.charCodeAt(0)==0?r:r}if(o.geT().j(0,o.ghn())&&o.ghn().j(0,o.ghe())&&o.ghe().j(0,o.gi_()))if(!o.geT().j(0,B.D))p=o.geT().a===o.geT().b?"BorderRadiusDirectional.circular("+B.d.a6(o.geT().a,1)+")":"BorderRadiusDirectional.all("+o.geT().k(0)+")"
 else p=null
 else{r=""+"BorderRadiusDirectional.only("
 if(!o.geT().j(0,B.D)){r+="topStart: "+o.geT().k(0)
@@ -57324,9 +57324,9 @@ iR(a,b,c){var s=this
 return new A.nd(A.I(s.geO(s),b.a,c.a),A.I(s.geP(s),b.c,c.b),A.I(s.gfX(s),0,c.c),A.I(s.gfW(),0,c.d),A.I(s.gbR(s),b.b,c.e),A.I(s.gbW(s),b.d,c.f))},
 k(a){var s=this
 if(s.gfX(s)===0&&s.gfW()===0){if(s.geO(s)===0&&s.geP(s)===0&&s.gbR(s)===0&&s.gbW(s)===0)return"EdgeInsets.zero"
-if(s.geO(s)===s.geP(s)&&s.geP(s)===s.gbR(s)&&s.gbR(s)===s.gbW(s))return"EdgeInsets.all("+B.c.a6(s.geO(s),1)+")"
-return"EdgeInsets("+B.c.a6(s.geO(s),1)+", "+B.c.a6(s.gbR(s),1)+", "+B.c.a6(s.geP(s),1)+", "+B.c.a6(s.gbW(s),1)+")"}if(s.geO(s)===0&&s.geP(s)===0)return"EdgeInsetsDirectional("+B.c.a6(s.gfX(s),1)+", "+B.c.a6(s.gbR(s),1)+", "+B.c.a6(s.gfW(),1)+", "+B.c.a6(s.gbW(s),1)+")"
-return"EdgeInsets("+B.c.a6(s.geO(s),1)+", "+B.c.a6(s.gbR(s),1)+", "+B.c.a6(s.geP(s),1)+", "+B.c.a6(s.gbW(s),1)+") + EdgeInsetsDirectional("+B.c.a6(s.gfX(s),1)+", 0.0, "+B.c.a6(s.gfW(),1)+", 0.0)"},
+if(s.geO(s)===s.geP(s)&&s.geP(s)===s.gbR(s)&&s.gbR(s)===s.gbW(s))return"EdgeInsets.all("+B.d.a6(s.geO(s),1)+")"
+return"EdgeInsets("+B.d.a6(s.geO(s),1)+", "+B.d.a6(s.gbR(s),1)+", "+B.d.a6(s.geP(s),1)+", "+B.d.a6(s.gbW(s),1)+")"}if(s.geO(s)===0&&s.geP(s)===0)return"EdgeInsetsDirectional("+B.d.a6(s.gfX(s),1)+", "+B.d.a6(s.gbR(s),1)+", "+B.d.a6(s.gfW(),1)+", "+B.d.a6(s.gbW(s),1)+")"
+return"EdgeInsets("+B.d.a6(s.geO(s),1)+", "+B.d.a6(s.gbR(s),1)+", "+B.d.a6(s.geP(s),1)+", "+B.d.a6(s.gbW(s),1)+") + EdgeInsetsDirectional("+B.d.a6(s.gfX(s),1)+", 0.0, "+B.d.a6(s.gfW(),1)+", 0.0)"},
 j(a,b){var s=this
 if(b==null)return!1
 return b instanceof A.cE&&b.geO(b)===s.geO(s)&&b.geP(b)===s.geP(s)&&b.gfX(b)===s.gfX(s)&&b.gfW()===s.gfW()&&b.gbR(b)===s.gbR(s)&&b.gbW(b)===s.gbW(s)},
@@ -57523,7 +57523,7 @@ if(p!=null){q+="bundle: "+p.k(0)
 s=!0}else s=!1
 p=r.b
 if(p!=null){if(s)q+=", "
-p=q+("devicePixelRatio: "+B.c.a6(p,1))
+p=q+("devicePixelRatio: "+B.d.a6(p,1))
 q=p
 s=!0}p=r.c
 if(p!=null){if(s)q+=", "
@@ -58081,8 +58081,8 @@ if(J.W(b)!==A.y(s))return!1
 return b instanceof A.eJ&&b.a.j(0,s.a)&&b.b.j(0,s.b)&&b.c===s.c},
 gB(a){return A.V(this.a,this.b,this.c,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){var s=this,r="RoundedRectangleBorder(",q=s.d
-if(q!==0)return r+s.a.k(0)+", "+s.b.k(0)+", "+B.c.a6(s.c*100,1)+u.A+B.c.a6(q*100,1)+"% oval)"
-return r+s.a.k(0)+", "+s.b.k(0)+", "+B.c.a6(s.c*100,1)+"% of the way to being a CircleBorder)"}}
+if(q!==0)return r+s.a.k(0)+", "+s.b.k(0)+", "+B.d.a6(s.c*100,1)+u.A+B.d.a6(q*100,1)+"% oval)"
+return r+s.a.k(0)+", "+s.b.k(0)+", "+B.d.a6(s.c*100,1)+"% of the way to being a CircleBorder)"}}
 A.f2.prototype={
 Ak(a,b){return this.e.cE(a,b)},
 gcI(a){return this.e.giU()},
@@ -58278,8 +58278,8 @@ if(J.W(b)!==A.y(this))return!1
 return b instanceof A.eM&&b.a.j(0,this.a)&&b.b===this.b},
 gB(a){return A.V(this.a,this.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){var s=this,r=s.c
-if(r!==0)return"StadiumBorder("+s.a.k(0)+", "+B.c.a6(s.b*100,1)+u.A+B.c.a6(r*100,1)+"% oval)"
-return"StadiumBorder("+s.a.k(0)+", "+B.c.a6(s.b*100,1)+"% of the way to being a CircleBorder)"}}
+if(r!==0)return"StadiumBorder("+s.a.k(0)+", "+B.d.a6(s.b*100,1)+u.A+B.d.a6(r*100,1)+"% oval)"
+return"StadiumBorder("+s.a.k(0)+", "+B.d.a6(s.b*100,1)+"% of the way to being a CircleBorder)"}}
 A.eN.prototype={
 aZ(a,b){var s=this.a.aZ(0,b)
 return new A.eN(this.b.ah(0,b),b,s)},
@@ -58332,7 +58332,7 @@ if(b==null)return!1
 if(J.W(b)!==A.y(s))return!1
 return b instanceof A.eN&&b.a.j(0,s.a)&&b.b.j(0,s.b)&&b.c===s.c},
 gB(a){return A.V(this.a,this.b,this.c,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){return"StadiumBorder("+this.a.k(0)+", "+this.b.k(0)+", "+B.c.a6(this.c*100,1)+"% of the way to being a RoundedRectangleBorder)"}}
+k(a){return"StadiumBorder("+this.a.k(0)+", "+this.b.k(0)+", "+B.d.a6(this.c*100,1)+"% of the way to being a RoundedRectangleBorder)"}}
 A.Nc.prototype={
 gkE(){return this.b},
 j(a,b){var s,r=this
@@ -58714,7 +58714,7 @@ aZ(a,b){return b*this.a},
 j(a,b){if(b==null)return!1
 if(this===b)return!0
 return b instanceof A.fG&&b.a===this.a},
-gB(a){return B.c.gB(this.a)},
+gB(a){return B.d.gB(this.a)},
 k(a){var s=this.a
 return s===1?"no scaling":"linear ("+A.m(s)+"x)"},
 $iB0:1,
@@ -58971,7 +58971,7 @@ else q=!0
 if(q)return 1/0
 return A.azO(r.gFx(r),r.galM(r),0,10,a)},
 kI(a){return Math.abs(this.eZ(0,a))<this.a.c},
-k(a){return"FrictionSimulation(c\u2093: "+B.c.a6(this.b,1)+", x\u2080: "+B.c.a6(this.d,1)+", dx\u2080: "+B.c.a6(this.e,1)+")"}}
+k(a){return"FrictionSimulation(c\u2093: "+B.d.a6(this.b,1)+", x\u2080: "+B.d.a6(this.d,1)+", dx\u2080: "+B.d.a6(this.e,1)+")"}}
 A.a46.prototype={
 $1(a){var s=this.a
 return s.e*Math.pow(s.b,a)*s.c-s.f},
@@ -58979,7 +58979,7 @@ $S:1}
 A.adi.prototype={
 k(a){return"Simulation"}}
 A.adN.prototype={
-k(a){return"SpringDescription(mass: "+B.c.a6(this.a,1)+", stiffness: "+B.n.a6(this.b,1)+", damping: "+B.c.a6(this.c,1)+")"}}
+k(a){return"SpringDescription(mass: "+B.d.a6(this.a,1)+", stiffness: "+B.n.a6(this.b,1)+", damping: "+B.d.a6(this.c,1)+")"}}
 A.Ax.prototype={
 J(){return"SpringType."+this.b}}
 A.Aw.prototype={
@@ -58988,7 +58988,7 @@ eZ(a,b){return this.c.eZ(0,b)},
 kI(a){var s=this.c
 return A.FY(s.eh(0,a),0,this.a.a)&&A.FY(s.eZ(0,a),0,this.a.c)},
 k(a){var s=this.c
-return"SpringSimulation(end: "+B.c.a6(this.b,1)+", "+s.gA9(s).k(0)+")"}}
+return"SpringSimulation(end: "+B.d.a6(this.b,1)+", "+s.gA9(s).k(0)+")"}}
 A.mN.prototype={
 eh(a,b){return this.kI(b)?this.b:this.YM(0,b)}}
 A.ahU.prototype={
@@ -59294,8 +59294,8 @@ if(p===0&&r.b===1/0&&r.c===0&&r.d===1/0)return"BoxConstraints(unconstrained"+q+"
 s=new A.Z2()
 return"BoxConstraints("+s.$3(p,r.b,"w")+", "+s.$3(r.c,r.d,"h")+q+")"}}
 A.Z2.prototype={
-$3(a,b,c){if(a===b)return c+"="+B.c.a6(a,1)
-return B.c.a6(a,1)+"<="+c+"<="+B.c.a6(b,1)},
+$3(a,b,c){if(a===b)return c+"="+B.d.a6(a,1)
+return B.d.a6(a,1)+"<="+c+"<="+B.d.a6(b,1)},
 $S:282}
 A.lI.prototype={
 Er(a,b,c){if(c!=null){c=A.oI(A.arY(c))
@@ -60109,9 +60109,9 @@ break}q=q.ce(h.geB())
 j=A.bL(h.bc(0,null),new A.l(q.a,q.b))
 i=1/h.ed
 s=j.a
-s=isFinite(s)?B.c.aW(s/i)*i-s:0
+s=isFinite(s)?B.d.aW(s/i)*i-s:0
 r=j.b
-return q.ce(new A.l(s,isFinite(r)?B.c.aW(r/i)*i-r:0))},
+return q.ce(new A.l(s,isFinite(r)?B.d.aW(r/i)*i-r:0))},
 b9(a){this.KZ()
 return this.af.b.a.a.gGA()},
 aX(a){this.KZ()
@@ -63153,7 +63153,7 @@ s=o.A$!=null
 r=s&&o.t>0
 q=o.t
 o.a0=b
-p=B.c.aW(A.I(b,0,1)*255)
+p=B.d.aW(A.I(b,0,1)*255)
 o.t=p
 if(r!==(s&&p>0))o.jK()
 o.T8()
@@ -63189,7 +63189,7 @@ sxG(a){if(!1===this.ng$)return
 this.ng$=!1
 this.b5()},
 E6(){var s,r=this,q=r.pq$,p=r.pr$
-p=r.pq$=B.c.aW(A.I(p.gm(p),0,1)*255)
+p=r.pq$=B.d.aW(A.I(p.gm(p),0,1)*255)
 if(q!==p){s=r.FK$
 p=p>0
 r.FK$=p
@@ -64190,13 +64190,13 @@ if(!(b instanceof A.mU))return!1
 return b.a===s.a&&b.b===s.b&&b.d===s.d&&b.f===s.f&&b.r===s.r&&b.w===s.w&&b.x===s.x&&b.y===s.y&&b.Q===s.Q&&b.z===s.z},
 gB(a){var s=this
 return A.V(s.a,s.b,s.d,s.f,s.r,s.w,s.x,s.y,s.Q,s.z,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
-k(a){var s=this,r=A.a([s.a.k(0),s.b.k(0),s.c.k(0),"scrollOffset: "+B.c.a6(s.d,1),"remainingPaintExtent: "+B.c.a6(s.r,1)],t.s),q=s.f
-if(q!==0)r.push("overlap: "+B.c.a6(q,1))
-r.push("crossAxisExtent: "+B.c.a6(s.w,1))
+k(a){var s=this,r=A.a([s.a.k(0),s.b.k(0),s.c.k(0),"scrollOffset: "+B.d.a6(s.d,1),"remainingPaintExtent: "+B.d.a6(s.r,1)],t.s),q=s.f
+if(q!==0)r.push("overlap: "+B.d.a6(q,1))
+r.push("crossAxisExtent: "+B.d.a6(s.w,1))
 r.push("crossAxisDirection: "+s.x.k(0))
-r.push("viewportMainAxisExtent: "+B.c.a6(s.y,1))
-r.push("remainingCacheExtent: "+B.c.a6(s.Q,1))
-r.push("cacheOrigin: "+B.c.a6(s.z,1))
+r.push("viewportMainAxisExtent: "+B.d.a6(s.y,1))
+r.push("remainingCacheExtent: "+B.d.a6(s.Q,1))
+r.push("cacheOrigin: "+B.d.a6(s.z,1))
 return"SliverConstraints("+B.b.bS(r,", ")+")"}}
 A.MI.prototype={
 cU(){return"SliverGeometry"}}
@@ -64205,7 +64205,7 @@ A.MJ.prototype={
 k(a){return A.y(this.a).k(0)+"@(mainAxis: "+A.m(this.c)+", crossAxis: "+A.m(this.d)+")"}}
 A.An.prototype={
 k(a){var s=this.a
-return"layoutOffset="+(s==null?"None":B.c.a6(s,1))}}
+return"layoutOffset="+(s==null?"None":B.d.a6(s,1))}}
 A.mV.prototype={
 k(a){return"paintOffset="+this.a.k(0)}}
 A.kY.prototype={}
@@ -64269,15 +64269,15 @@ return a*b},
 Vh(a,b){var s,r
 this.gu4()
 if(b>0){s=a/b
-r=B.c.aW(s)
+r=B.d.aW(s)
 if(Math.abs(s*b-r*b)<1e-10)return r
-return B.c.dK(s)}return 0},
+return B.d.dK(s)}return 0},
 HN(a,b){var s,r
 this.gu4()
 if(b>0){s=a/b-1
-r=B.c.aW(s)
+r=B.d.aW(s)
 if(Math.abs(s*b-r*b)<1e-10)return Math.max(0,r)
-return Math.max(0,B.c.dY(s))}return 0},
+return Math.max(0,B.d.dY(s))}return 0},
 aeu(a,b){var s
 this.gu4()
 s=this.aA.gxP()
@@ -65023,7 +65023,7 @@ return b instanceof A.Lp&&b.a===s.a&&b.b===s.b&&b.c===s.c&&b.d===s.d},
 gB(a){var s=this
 return A.V(s.a,s.b,s.c,s.d,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){var s=this
-return"RelativeRect.fromLTRB("+B.c.a6(s.a,1)+", "+B.c.a6(s.b,1)+", "+B.c.a6(s.c,1)+", "+B.c.a6(s.d,1)+")"}}
+return"RelativeRect.fromLTRB("+B.d.a6(s.a,1)+", "+B.d.a6(s.b,1)+", "+B.d.a6(s.c,1)+", "+B.d.a6(s.d,1)+")"}}
 A.ee.prototype={
 gz_(){var s=this
 return s.e!=null||s.f!=null||s.r!=null||s.w!=null||s.x!=null||s.y!=null},
@@ -65650,7 +65650,7 @@ r.push(A.m(s.fr))
 r.push(s.k4.k(0))
 return"<optimized out>#"+A.b8(s)+"("+B.b.bS(r,", ")+")"},
 dz(a){var s=this.at
-if(s!=null)a.push("offset: "+B.c.a6(s,1))}}
+if(s!=null)a.push("offset: "+B.d.a6(s,1))}}
 A.k1.prototype={
 akZ(){return this.a.$0()}}
 A.uA.prototype={}
@@ -65739,7 +65739,7 @@ A.c8(B.y,new A.abV(r))
 A.c8(B.y,new A.abW(r,s))
 r.aiW(new A.abX(r))},
 JB(a){var s=this.k2$
-return A.cd(B.c.aW((s==null?B.y:new A.aX(a.a-s.a)).a/1)+this.k3$.a,0,0)},
+return A.cd(B.d.aW((s==null?B.y:new A.aX(a.a-s.a)).a/1)+this.k3$.a,0,0)},
 a4r(a){if(this.k1$){this.p3$=!0
 return}this.S9(a)},
 a4P(){var s=this
@@ -66215,10 +66215,10 @@ A.acK.prototype={
 $1(a){return a.a},
 $S:309}
 A.l7.prototype={
-b3(a,b){return B.c.b3(this.b,b.b)},
+b3(a,b){return B.d.b3(this.b,b.b)},
 $ibN:1}
 A.iQ.prototype={
-b3(a,b){return B.c.b3(this.a,b.a)},
+b3(a,b){return B.d.b3(this.a,b.a)},
 Wo(){var s,r,q,p,o,n,m,l,k,j=A.a([],t.TV)
 for(s=this.c,r=s.length,q=0;q<s.length;s.length===r||(0,A.T)(s),++q){p=s[q]
 o=p.e
@@ -66272,9 +66272,9 @@ A.amT.prototype={
 $2(a,b){var s,r,q=a.e,p=A.q6(a,new A.l(q.a,q.b))
 q=b.e
 s=A.q6(b,new A.l(q.a,q.b))
-r=B.c.b3(p.b,s.b)
+r=B.d.b3(p.b,s.b)
 if(r!==0)return-r
-return-B.c.b3(p.a,s.a)},
+return-B.d.b3(p.a,s.a)},
 $S:99}
 A.amW.prototype={
 $1(a){var s=this,r=s.a
@@ -69764,7 +69764,7 @@ if(!this.gOe()||J.vt(this.dx.b).a.b<a)return null
 s=this.dx.b
 r=J.aK(s)
 q=r.gu(s)-1
-for(p=0;p<=q;){o=B.c.dK((p+q)/2)
+for(p=0;p<=q;){o=B.d.dK((p+q)/2)
 n=r.h(s,o).a.a
 if(a<=r.h(s,o).a.b&&a>=n)return r.h(s,o)
 else if(a<=n)q=o-1
@@ -70310,7 +70310,7 @@ s===$&&A.b()
 r=Math.min((p>>>24&255)/255,s)
 s=q.gT()
 p=q.a.go
-p=A.Y(B.c.aW(255*r),p.gm(p)>>>16&255,p.gm(p)>>>8&255,p.gm(p)&255)
+p=A.Y(B.d.aW(255*r),p.gm(p)>>>16&255,p.gm(p)>>>8&255,p.gm(p)&255)
 s.gej().sEJ(p)
 if(q.a.as){p=q.gjm().x
 p===$&&A.b()
@@ -71069,7 +71069,7 @@ n=b2.gjm().x
 n===$&&A.b()
 m=Math.min((p>>>24&255)/255,n)
 n=b2.a.go
-n=A.Y(B.c.aW(255*m),n.gm(n)>>>16&255,n.gm(n)>>>8&255,n.gm(n)&255)
+n=A.Y(B.d.aW(255*m),n.gm(n)>>>16&255,n.gm(n)>>>8&255,n.gm(n)&255)
 p=b2.a
 l=p.k1
 k=p.x
@@ -71953,10 +71953,10 @@ A.alJ.prototype={
 $1(a){return a.b===this.a},
 $S:371}
 A.a16.prototype={
-$2(a,b){if(this.a)if(this.b)return B.c.b3(a.gaY(a).b,b.gaY(b).b)
-else return B.c.b3(b.gaY(b).d,a.gaY(a).d)
-else if(this.b)return B.c.b3(a.gaY(a).a,b.gaY(b).a)
-else return B.c.b3(b.gaY(b).c,a.gaY(a).c)},
+$2(a,b){if(this.a)if(this.b)return B.d.b3(a.gaY(a).b,b.gaY(b).b)
+else return B.d.b3(b.gaY(b).d,a.gaY(a).d)
+else if(this.b)return B.d.b3(a.gaY(a).a,b.gaY(b).a)
+else return B.d.b3(b.gaY(b).c,a.gaY(a).c)},
 $S:33}
 A.a18.prototype={
 $2(a,b){var s=a.gaY(a).gaL(),r=b.gaY(b).gaL(),q=this.a,p=A.ar3(q,s,r)
@@ -71974,7 +71974,7 @@ m=Math.abs(m-l)<Math.abs(k-l)?m:k
 s=n.a
 r=n.c
 s=Math.abs(s-l)<Math.abs(r-l)?s:r
-q=B.c.b3(Math.abs(m-l),Math.abs(s-l))
+q=B.d.b3(Math.abs(m-l),Math.abs(s-l))
 if(q===0)return A.ar3(p,a.gaY(a).gaL(),b.gaY(b).gaL())
 return q},
 $S:33}
@@ -71984,7 +71984,7 @@ m=Math.abs(m-l)<Math.abs(k-l)?m:k
 s=n.b
 r=n.d
 s=Math.abs(s-l)<Math.abs(r-l)?s:r
-q=B.c.b3(Math.abs(m-l),Math.abs(s-l))
+q=B.d.b3(Math.abs(m-l),Math.abs(s-l))
 if(q===0)return A.ar2(p,a.gaY(a).gaL(),b.gaY(b).gaL())
 return q},
 $S:33}
@@ -71997,7 +71997,7 @@ $1(a){var s=this.a
 return!a.gaY(a).j(0,s)&&a.gaY(a).gaL().a>=s.c},
 $S:19}
 A.a12.prototype={
-$2(a,b){return B.c.b3(a.gaY(a).gaL().a,b.gaY(b).gaL().a)},
+$2(a,b){return B.d.b3(a.gaY(a).gaL().a,b.gaY(b).gaL().a)},
 $S:33}
 A.a13.prototype={
 $1(a){var s=this.a
@@ -72008,7 +72008,7 @@ $1(a){var s=this.a
 return!a.gaY(a).j(0,s)&&a.gaY(a).gaL().b>=s.d},
 $S:19}
 A.a15.prototype={
-$2(a,b){return B.c.b3(a.gaY(a).gaL().b,b.gaY(b).gaL().b)},
+$2(a,b){return B.d.b3(a.gaY(a).gaL().b,b.gaY(b).gaL().b)},
 $S:33}
 A.a1_.prototype={
 $1(a){var s,r,q=this,p=q.b.a.pop().b,o=p.e
@@ -72056,8 +72056,8 @@ $1(a){var s=a.gRh()
 return A.y0(s,A.ad(s).c)},
 $S:374}
 A.alI.prototype={
-$2(a,b){switch(this.a.a){case 1:return B.c.b3(a.b.a,b.b.a)
-case 0:return B.c.b3(b.b.c,a.b.c)}},
+$2(a,b){switch(this.a.a){case 1:return B.d.b3(a.b.a,b.b.a)
+case 0:return B.d.b3(b.b.c,a.b.c)}},
 $S:147}
 A.alH.prototype={
 $1(a){var s,r,q=A.a([],t.vl),p=t.I,o=a.jZ(p)
@@ -72083,8 +72083,8 @@ A.alE.prototype={
 $1(a){return a.b},
 $S:377}
 A.alF.prototype={
-$2(a,b){switch(this.a.a){case 1:return B.c.b3(a.gaY(a).a,b.gaY(b).a)
-case 0:return B.c.b3(b.gaY(b).c,a.gaY(a).c)}},
+$2(a,b){switch(this.a.a){case 1:return B.d.b3(a.gaY(a).a,b.gaY(b).a)
+case 0:return B.d.b3(b.gaY(b).c,a.gaY(a).c)}},
 $S:378}
 A.aac.prototype={
 a1F(a){var s,r,q,p,o,n=B.b.gN(a).a,m=t.qi,l=A.a([],m),k=A.a([],t.jE)
@@ -72129,7 +72129,7 @@ for(;s.length!==0;){h=this.N5(s)
 j.push(h.c)
 B.b.D(s,h)}return j}}
 A.aad.prototype={
-$2(a,b){return B.c.b3(a.b.b,b.b.b)},
+$2(a,b){return B.d.b3(a.b.b,b.b.b)},
 $S:147}
 A.aae.prototype={
 $2(a,b){var s=a.b,r=A.ad(b).i("b6<1>")
@@ -73595,7 +73595,7 @@ if(l==null)l=1
 k=this.x
 if(k==null){f=r.f
 f.toString
-k=f}if(l!==1)k=A.Y(B.c.aW(255*((k.gm(k)>>>24&255)/255*l)),k.gm(k)>>>16&255,k.gm(k)>>>8&255,k.gm(k)&255)
+k=f}if(l!==1)k=A.Y(B.d.aW(255*((k.gm(k)>>>24&255)/255*l)),k.gm(k)>>>16&255,k.gm(k)>>>8&255,k.gm(k)&255)
 f=this.c
 j=A.dH(f.a)
 i=A.a([],t.uf)
@@ -74454,7 +74454,7 @@ return b instanceof A.yf&&b.a.j(0,s.a)&&b.b===s.b&&b.gds().a===s.gds().a&&b.e===
 gB(a){var s=this
 return A.V(s.a,s.b,s.gds().a,s.e,s.r,s.w,s.f,!1,s.as,s.at,s.ax,s.Q,s.z,s.ay,s.ch,s.CW,A.cp(s.cx),B.a,B.a,B.a)},
 k(a){var s=this
-return"MediaQueryData("+B.b.bS(A.a(["size: "+s.a.k(0),"devicePixelRatio: "+B.c.a6(s.b,1),"textScaler: "+s.gds().k(0),"platformBrightness: "+s.e.k(0),"padding: "+s.r.k(0),"viewPadding: "+s.w.k(0),"viewInsets: "+s.f.k(0),"systemGestureInsets: "+s.x.k(0),"alwaysUse24HourFormat: false","accessibleNavigation: "+s.z,"highContrast: "+s.as,"onOffSwitchLabels: "+s.at,"disableAnimations: "+s.ax,"invertColors: "+s.Q,"boldText: "+s.ay,"navigationMode: "+s.ch.b,"gestureSettings: "+s.CW.k(0),"displayFeatures: "+A.m(s.cx)],t.s),", ")+")"}}
+return"MediaQueryData("+B.b.bS(A.a(["size: "+s.a.k(0),"devicePixelRatio: "+B.d.a6(s.b,1),"textScaler: "+s.gds().k(0),"platformBrightness: "+s.e.k(0),"padding: "+s.r.k(0),"viewPadding: "+s.w.k(0),"viewInsets: "+s.f.k(0),"systemGestureInsets: "+s.x.k(0),"alwaysUse24HourFormat: false","accessibleNavigation: "+s.z,"highContrast: "+s.as,"onOffSwitchLabels: "+s.at,"disableAnimations: "+s.ax,"invertColors: "+s.Q,"boldText: "+s.ay,"navigationMode: "+s.ch.b,"gestureSettings: "+s.CW.k(0),"displayFeatures: "+A.m(s.cx)],t.s),", ")+")"}}
 A.a7A.prototype={
 $1(a){return this.a.pT(a.gkq(a))},
 $S:139}
@@ -76056,7 +76056,7 @@ r.a=s.b.ab(0,q.gm(q))
 r.b=Math.min(0.025+75e-8*l*l,1)
 r=n.b
 r===$&&A.b()
-r.e=A.cd(0,B.c.aW(0.15+l*0.02),0)
+r.e=A.cd(0,B.d.aW(0.15+l*0.02),0)
 r.jE(0,0)
 n.as=0.5
 n.a=B.S3}else{q=a.d
@@ -76188,7 +76188,7 @@ r=j.as
 m=$.af().bp()
 l=j.ax
 k=i.a
-m.sar(0,A.Y(B.c.aW(255*i.b.ab(0,k.gm(k))),l.gm(l)>>>16&255,l.gm(l)>>>8&255,l.gm(l)&255))
+m.sar(0,A.Y(B.d.aW(255*i.b.ab(0,k.gm(k))),l.gm(l)>>>16&255,l.gm(l)>>>8&255,l.gm(l)&255))
 a.cn(0)
 a.aD(0,0,j.d+j.e)
 a.fb(0,1,n*q)
@@ -76276,7 +76276,7 @@ q.a=o.b.ab(0,n.gm(n))
 q.b=Math.min(0.016+1.01/p,1)
 q=s.a
 q===$&&A.b()
-q.e=A.cd(0,B.c.aW(p*0.02),0)
+q.e=A.cd(0,B.d.aW(p*0.02),0)
 q.jE(0,0)
 s.d=B.SU
 s.f=r>0?B.cW:B.yu}else if(a.d!=null){s=s.d
@@ -76441,7 +76441,7 @@ if(s!=null)r.FQ(r.qm(s))},
 gwi(){var s=this.ax
 s.toString
 return Math.max(0,s*(this.a5-1)/2)},
-v0(a,b){var s=Math.max(0,a-this.gwi())/(b*this.a5),r=B.c.zZ(s)
+v0(a,b){var s=Math.max(0,a-this.gwi())/(b*this.a5),r=B.d.zZ(s)
 if(Math.abs(s-r)<1e-10)return r
 return s},
 qm(a){var s=this.ax
@@ -76571,7 +76571,7 @@ p=n.a44(a)
 s=q.c
 if(b<-s)p-=0.5
 else if(b>s)p+=0.5
-o=n.a45(a,B.c.zZ(p))
+o=n.a45(a,B.d.zZ(p))
 s=a.at
 s.toString
 if(o!==s){s=n.go3()
@@ -76613,7 +76613,7 @@ p.toString
 p=Math.max(0,A.I(s,q,p))
 q=r.d
 q.toString
-o=B.c.aW(p/Math.max(1,q*r.r))
+o=B.d.aW(p/Math.max(1,q*r.r))
 s=this.a
 if(o!==s.d){s.d=o
 s.a.y.$1(o)}}return!1},
@@ -77648,7 +77648,7 @@ k(a){var s=A.a([],t.s),r=this.f,q=r.length
 if(q===0)s.push("no clients")
 else if(q===1){r=B.b.gc7(r).at
 r.toString
-s.push("one client, offset "+B.c.a6(r,1))}else s.push(""+q+" clients")
+s.push("one client, offset "+B.d.a6(r,1))}else s.push(""+q+" clients")
 return"<optimized out>#"+A.b8(this)+"("+B.b.bS(s,", ")+")"}}
 A.adx.prototype={
 gtr(){return null},
@@ -77788,7 +77788,7 @@ s.toString
 return s},
 gSo(){return this.d!=null},
 k(a){var s=this
-return"FixedScrollMetrics("+B.c.a6(Math.max(s.gdq()-s.ghH(),0),1)+"..["+B.c.a6(s.gnc(),1)+"].."+B.c.a6(Math.max(s.ghG()-s.gdq(),0),1)+")"},
+return"FixedScrollMetrics("+B.d.a6(Math.max(s.gdq()-s.ghH(),0),1)+"..["+B.d.a6(s.gnc(),1)+"].."+B.d.a6(Math.max(s.ghG()-s.gdq(),0),1)+")"},
 gfk(){return this.e},
 gpf(a){return this.f}}
 A.Qn.prototype={}
@@ -77813,8 +77813,8 @@ if(s!=null)a.push(s.k(0))}}
 A.jx.prototype={
 dz(a){var s,r=this
 r.qD(a)
-a.push("overscroll: "+B.c.a6(r.e,1))
-a.push("velocity: "+B.c.a6(r.f,1))
+a.push("overscroll: "+B.d.a6(r.e,1))
+a.push("velocity: "+B.d.a6(r.f,1))
 s=r.d
 if(s!=null)a.push(s.k(0))}}
 A.mM.prototype={
@@ -78336,12 +78336,12 @@ s.di()},
 dz(a){var s,r,q=this
 q.YW(a)
 s=q.z
-s=s==null?null:B.c.a6(s,1)
+s=s==null?null:B.d.a6(s,1)
 r=q.Q
-r=r==null?null:B.c.a6(r,1)
+r=r==null?null:B.d.a6(r,1)
 a.push("range: "+A.m(s)+".."+A.m(r))
 r=q.ax
-a.push("viewport: "+A.m(r==null?null:B.c.a6(r,1)))}}
+a.push("viewport: "+A.m(r==null?null:B.d.a6(r,1)))}}
 A.aca.prototype={
 $1(a){this.a.as=0},
 $S:4}
@@ -79235,7 +79235,7 @@ default:f=null}if(f!=null){c=d.d.at
 c.toString
 c=Math.abs(f-c)<1}if(c){p.e=!1
 s=1
-break}e=A.cd(0,B.c.aW(1000/p.c),0)
+break}e=A.cd(0,B.d.aW(1000/p.c),0)
 s=3
 return A.B(d.d.iN(f,B.a4,e),$async$oy)
 case 3:s=p.e?4:5
@@ -79343,19 +79343,19 @@ q=new A.aco()
 if(!q.$1(s)&&!q.$1(b))return
 r.aC()},
 gMZ(){var s=$.af().bp(),r=this.a,q=this.r
-s.sar(0,A.Y(B.c.aW(255*((r.gm(r)>>>24&255)/255*q.gm(q))),r.gm(r)>>>16&255,r.gm(r)>>>8&255,r.gm(r)&255))
+s.sar(0,A.Y(B.d.aW(255*((r.gm(r)>>>24&255)/255*q.gm(q))),r.gm(r)>>>16&255,r.gm(r)>>>8&255,r.gm(r)&255))
 return s},
 N_(a){var s,r,q,p=this
 if(a){s=$.af().bp()
 r=p.c
 q=p.r
-s.sar(0,A.Y(B.c.aW(255*((r.gm(r)>>>24&255)/255*q.gm(q))),r.gm(r)>>>16&255,r.gm(r)>>>8&255,r.gm(r)&255))
+s.sar(0,A.Y(B.d.aW(255*((r.gm(r)>>>24&255)/255*q.gm(q))),r.gm(r)>>>16&255,r.gm(r)>>>8&255,r.gm(r)&255))
 s.sbV(0,B.ai)
 s.siF(1)
 return s}s=$.af().bp()
 r=p.b
 q=p.r
-s.sar(0,A.Y(B.c.aW(255*((r.gm(r)>>>24&255)/255*q.gm(q))),r.gm(r)>>>16&255,r.gm(r)>>>8&255,r.gm(r)&255))
+s.sar(0,A.Y(B.d.aW(255*((r.gm(r)>>>24&255)/255*q.gm(q))),r.gm(r)>>>16&255,r.gm(r)>>>8&255,r.gm(r)&255))
 return s},
 a8V(){return this.N_(!1)},
 a8S(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=null
@@ -81486,7 +81486,7 @@ p=A.bL(n.bc(0,null),q.a).b-n.af.gcY()/2
 o.as=p-o.Q
 r.qu(o.li(n.eL(new A.l(s.a,p)),s,n))},
 Ln(a,b){var s=a-b,r=s<0?-1:1,q=this.b.af
-return b+r*B.c.dK(Math.abs(s)/q.gcY())*q.gcY()},
+return b+r*B.d.dK(Math.abs(s)/q.gcY())*q.gcY()},
 a66(a){var s,r,q,p,o,n=this,m=n.b
 if(m.y==null)return
 s=a.d
@@ -83945,8 +83945,8 @@ $ibN:1}
 A.kZ.prototype={
 gaQ(a){return this.d}}
 A.qp.prototype={
-F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/saustralia.png",B.c6,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.c.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
-return A.mL(new A.i6(s),B.h,A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in Australia?",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.fy,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse Programs and Courses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. English Language Environment:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.X,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. High Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jJ,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gh,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Post-Study Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lP,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Skilled Migration Pathways:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.v,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work While Studying:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.x,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.H,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("11. Supportive Education System:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.aZ,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("12. Health and Safety:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),new A.o(B.f,s,s,A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,20,s),A.d("1. Research Universities and Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oc,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Admission Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.n,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Online Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gE,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Pay Application Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.je,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Receive Offer of Admission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.F,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Apply for Student Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bz,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.hD,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.i,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ct,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gv,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jn,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dz,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.d,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Books and Supplies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.c0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Miscellaneous Expenses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Post-Study Work Visa (PSWV):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bh,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Skilled Migration Pathways:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jN,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cl,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Entrepreneurial Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,50,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,800)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.aw(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.Yt()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.Yu(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.Yv(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.Yw(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.Yx(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.Yy()))}}
+F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/saustralia.png",B.c6,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.d.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
+return A.mL(new A.i6(s),B.h,A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in Australia?",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.fy,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse Programs and Courses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. English Language Environment:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.X,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. High Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jJ,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gh,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Post-Study Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lP,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Skilled Migration Pathways:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.v,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work While Studying:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.x,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.H,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("11. Supportive Education System:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.aZ,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("12. Health and Safety:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),new A.o(B.f,s,s,A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,20,s),A.d("1. Research Universities and Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oc,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Admission Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.n,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Online Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gE,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Pay Application Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.je,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Receive Offer of Admission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.F,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Apply for Student Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bz,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.hD,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.i,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ct,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gv,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jn,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dz,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.d,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Books and Supplies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.c0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Miscellaneous Expenses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Post-Study Work Visa (PSWV):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bh,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Skilled Migration Pathways:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jN,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cl,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Entrepreneurial Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,50,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,800)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.aw(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.Yt()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.Yu(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.Yv(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.Yw(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.Yx(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.Yy()))}}
 A.Yt.prototype={
 $0(){},
 $S:0}
@@ -84014,8 +84014,8 @@ case 3:return A.K(null,r)}})
 return A.L($async$$0,r)},
 $S:2}
 A.qq.prototype={
-F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/saustralia.png",B.c5,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.c.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
-return new A.ja(A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in Australia?",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.fy,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse Programs and Courses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. English Language Environment:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.X,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. High Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jJ,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gh,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Post-Study Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lP,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Skilled Migration Pathways:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.v,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work While Studying:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.x,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.H,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("11. Supportive Education System:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.aZ,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("12. Health and Safety:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),new A.o(B.f,s,s,A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,20,s),A.d("1. Research Universities and Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oc,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Admission Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.n,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Online Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gE,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Pay Application Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.je,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Receive Offer of Admission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.F,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Apply for Student Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bz,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.hD,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.i,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ct,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gv,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jn,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dz,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.d,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Books and Supplies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.c0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Miscellaneous Expenses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Post-Study Work Visa (PSWV):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bh,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Skilled Migration Pathways:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jN,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cl,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Entrepreneurial Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,50,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,280)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.Yz()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.YA(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.YB(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.YC(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.YD(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.ac,B.j),B.m,new A.h(r),s,s,500,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s)}}
+F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/saustralia.png",B.c5,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.d.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
+return new A.ja(A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in Australia?",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.fy,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse Programs and Courses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. English Language Environment:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.X,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. High Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jJ,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gh,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Post-Study Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lP,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Skilled Migration Pathways:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.v,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work While Studying:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.x,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.H,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("11. Supportive Education System:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.aZ,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("12. Health and Safety:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),new A.o(B.f,s,s,A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,20,s),A.d("1. Research Universities and Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oc,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Admission Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.n,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Online Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gE,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Pay Application Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.je,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Receive Offer of Admission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.F,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Apply for Student Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bz,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.hD,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.i,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ct,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gv,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jn,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dz,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.d,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Books and Supplies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.c0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Miscellaneous Expenses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Post-Study Work Visa (PSWV):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bh,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Skilled Migration Pathways:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jN,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cl,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Entrepreneurial Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nW,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,50,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,280)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.Yz()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.YA(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.YB(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.YC(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.YD(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.ac,B.j),B.m,new A.h(r),s,s,500,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s)}}
 A.Yz.prototype={
 $0(){},
 $S:0}
@@ -84068,8 +84068,8 @@ A.YD.prototype={
 $0(){},
 $S:0}
 A.qz.prototype={
-F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/scanada.jpg",B.c5,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.c.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
-return new A.ja(A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in Canada",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.h,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse and Inclusive Society:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.p8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bt,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Post-Study Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.oq,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Global Recognition of Degrees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.y,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.op,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.C,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.B,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.P,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bY,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work While Studying:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ho,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Immigration Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.e,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("11. Friendly Immigration Policies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.na,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("12. Cultural Events and Festivals:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.hK,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Research Universities and Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.po,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Admission Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Standardized Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fS,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.n,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Online Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Pay Application Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Receive Offer of Admission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.F,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Apply for Study Permit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.aR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dY,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.lC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jU,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Books and Supplies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.mu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Miscellaneous Expenses::",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Top Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d(u.R,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.E,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Engineering:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.e6,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.M,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Post-Graduation Work Permit (PGWP):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.m0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Express Entry Immigration System:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cS,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.L,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Entrepreneurial Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.kH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,280)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.Zv()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.Zw(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.Zx(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.Zy(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.Zz(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.ac,B.j),B.m,new A.h(r),s,s,500,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s)}}
+F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/scanada.jpg",B.c5,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.d.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
+return new A.ja(A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in Canada",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.h,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse and Inclusive Society:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.p8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bt,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Post-Study Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.oq,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Global Recognition of Degrees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.y,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.op,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.C,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.B,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.P,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bY,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work While Studying:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ho,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Immigration Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.e,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("11. Friendly Immigration Policies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.na,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("12. Cultural Events and Festivals:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.hK,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Research Universities and Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.po,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Admission Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Standardized Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fS,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.n,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Online Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Pay Application Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Receive Offer of Admission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.F,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Apply for Study Permit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.aR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dY,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.lC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jU,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Books and Supplies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.mu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Miscellaneous Expenses::",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Top Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d(u.R,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.E,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Engineering:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.e6,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.M,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Post-Graduation Work Permit (PGWP):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.m0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Express Entry Immigration System:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cS,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.L,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Entrepreneurial Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.kH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,280)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.Zv()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.Zw(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.Zx(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.Zy(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.Zz(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.ac,B.j),B.m,new A.h(r),s,s,500,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s)}}
 A.Zv.prototype={
 $0(){},
 $S:0}
@@ -84131,10 +84131,10 @@ l=A.auU(A.an(new A.ah(m,new A.ajz(),l),!0,l.i("bp.E")),A.auT(!0,A.cd(0,0,3),500)
 m=t.w
 s=A.bI(a,o,m).w
 r=t.p
-s=A.dJ(A.ai(o,A.ax(A.a([A.d("Why SIS Review?",o,o,o,A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,25,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o),A.ai(o,A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),new A.fv("assets/assets/images/expertise.png",0,0,0,o),A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.dY(1,0,0,0,"Expertise and Experience",A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,25,o,o,o,o,o,!0,o,o,o,o,o,o,o,o)),A.dY(1,0,0,0,u.gJ,A.c(o,o,o,o,o,o,o,o,o,o,o,15,o,o,o,o,o,!0,o,o,o,o,o,o,o,o))],r),B.i,B.p,B.j),B.m,o,o,o,o,o,o,500)],r),B.i,B.Y,B.j)],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,o)],r),B.i,B.p,B.j),B.m,B.h,o,o,300,o,o,s.a.a),o,B.aM)
-q=A.dJ(A.ai(o,A.ax(A.a([A.ai(o,A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.dY(-1,0,0,0,"Comprehensive Guidance",A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,25,o,o,o,o,o,!0,o,o,o,o,o,o,o,o)),A.dY(-1,0,0,0,u.s,A.c(o,o,o,o,o,o,o,o,o,o,o,15,o,o,o,o,o,!0,o,o,o,o,o,o,o,o))],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,500),A.aw(A.a([new A.fv("assets/assets/images/guidance.png",0,0,0,o)],r),B.i,B.p,B.j)],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,o)],r),B.i,B.ac,B.j),B.m,B.h,o,o,250,o,o,o),o,B.aM)
+s=A.dJ(A.ai(o,A.ax(A.a([A.d("Why SIS Review?",o,o,o,A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,25,o,o,B.c,o,o,!0,o,o,o,o,o,o,o,o),o,o),A.ai(o,A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),new A.fv("assets/assets/images/expertise.png",0,0,0,o),A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.dY(1,0,0,0,"Expertise and Experience",A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,25,o,o,B.c,o,o,!0,o,o,o,o,o,o,o,o)),A.dY(1,0,0,0,u.gJ,A.c(o,o,o,o,o,o,o,o,o,o,o,15,o,o,o,o,o,!0,o,o,o,o,o,o,o,o))],r),B.i,B.p,B.j),B.m,o,o,o,o,o,o,500)],r),B.i,B.Y,B.j)],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,o)],r),B.i,B.p,B.j),B.m,B.h,o,o,300,o,o,s.a.a),o,B.aM)
+q=A.dJ(A.ai(o,A.ax(A.a([A.ai(o,A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.dY(-1,0,0,0,"Comprehensive Guidance",A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,25,o,o,B.c,o,o,!0,o,o,o,o,o,o,o,o)),A.dY(-1,0,0,0,u.s,A.c(o,o,o,o,o,o,o,o,o,o,o,15,o,o,o,o,o,!0,o,o,o,o,o,o,o,o))],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,500),A.aw(A.a([new A.fv("assets/assets/images/guidance.png",0,0,0,o)],r),B.i,B.p,B.j)],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,o)],r),B.i,B.ac,B.j),B.m,B.h,o,o,250,o,o,o),o,B.aM)
 p=A.bI(a,o,m).w
-return A.mL(new A.i6(o),B.h,A.dJ(A.ax(A.a([l,s,q,A.ai(o,A.ax(A.a([A.ai(o,A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),new A.fv("assets/assets/images/transparent.png",0,0,0,o),A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.dY(1,0,0,0,"Transparent Processes",A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,25,o,o,o,o,o,!0,o,o,o,o,o,o,o,o)),A.dY(1,0,0,0,u.or,A.c(o,o,o,o,o,o,o,o,o,o,o,15,o,o,o,o,o,!0,o,o,o,o,o,o,o,o))],r),B.i,B.p,B.j),B.m,o,o,o,o,o,o,500)],r),B.i,B.Y,B.j)],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,o)],r),B.i,B.p,B.j),B.m,B.h,o,o,250,o,o,p.a.a),A.dJ(A.ai(o,A.ax(A.a([A.ai(o,A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.dY(-1,0,0,0,"Customized Solutions",A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,25,o,o,o,o,o,!0,o,o,o,o,o,o,o,o)),A.dY(-1,0,0,0,u.g,A.c(o,o,o,o,o,o,o,o,o,o,o,15,o,o,o,o,o,!0,o,o,o,o,o,o,o,o))],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,500),A.aw(A.a([new A.fv("assets/assets/images/customized.png",0,0,0,o)],r),B.i,B.p,B.j)],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,o)],r),B.i,B.ac,B.j),B.m,B.h,o,o,250,o,o,o),o,B.aM),A.ax(A.a([A.ai(o,A.fe(A.aw(A.a([A.c5("assets/images/USA.png",o,o,o),A.n(o,o,80),A.c5("assets/images/UK.png",o,o,o),A.n(o,o,80),A.c5("assets/images/Australia.png",o,o,o),A.n(o,o,80),A.c5("assets/images/Canada.png",o,o,o),A.n(o,o,80)],r),B.i,B.p,B.j),o,o),B.m,A.Y(204,11,41,62),o,o,250,o,o,A.bI(a,o,m).w.a.a)],r),B.i,B.p,B.j),A.n(o,10,o),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.d("Our Vision",o,o,o,A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,50,o,o,B.d,o,o,!0,o,o,o,o,o,o,o,o),o,o),A.d(u.t,o,o,o,A.c(o,o,o,o,o,o,o,o,o,o,o,25,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o)],r),B.i,B.p,B.j),B.m,o,o,o,o,o,o,1000),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.d("Our Mission",o,o,o,A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,50,o,o,B.d,o,o,!0,o,o,o,o,o,o,o,o),o,o),A.d(u.w,o,o,o,A.c(o,o,o,o,o,o,o,o,o,o,o,25,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o)],r),B.i,B.p,B.j),B.m,o,o,o,o,o,o,1000),A.ai(o,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",o,250,200)],r),B.i,B.U,B.j),A.aw(A.a([new A.aD(new A.X(10,10,10,10),o,o),A.aw(A.a([A.fX(A.ay(B.b1,B.h,o),new A.ajA()),A.n(o,o,10),A.d(u._,o,o,o,A.c(o,o,B.h,o,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o)],r),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",o,o,o,A.c(o,o,B.h,o,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o),A.b0(o,o,A.ay(B.aW,B.h,o),o,new A.ajB(),o,o,o,o),A.b0(o,o,A.ay(B.aY,B.h,o),o,new A.ajC(),o,o,o,o),A.b0(o,o,A.ay(B.b0,B.h,o),o,new A.ajD(),o,o,o,o),A.b0(o,o,A.ay(B.aX,B.h,o),o,new A.ajE(),o,o,o,o)],r),B.i,B.p,B.j)],r),B.i,B.p,B.j)],r),B.i,B.p,B.j),B.m,new A.h(n),o,o,400,o,o,o)],r),B.i,B.ac,B.j),o,B.O),new A.i6(o),A.lW(new A.h(4280669030),A.ay(B.cf,o,o),!1,new A.ajF()))}}
+return A.mL(new A.i6(o),B.h,A.dJ(A.ax(A.a([l,s,q,A.ai(o,A.ax(A.a([A.ai(o,A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),new A.fv("assets/assets/images/transparent.png",0,0,0,o),A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.dY(1,0,0,0,"Transparent Processes",A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,25,o,o,B.c,o,o,!0,o,o,o,o,o,o,o,o)),A.dY(1,0,0,0,u.or,A.c(o,o,o,o,o,o,o,o,o,o,o,15,o,o,o,o,o,!0,o,o,o,o,o,o,o,o))],r),B.i,B.p,B.j),B.m,o,o,o,o,o,o,500)],r),B.i,B.Y,B.j)],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,o)],r),B.i,B.p,B.j),B.m,B.h,o,o,250,o,o,p.a.a),A.dJ(A.ai(o,A.ax(A.a([A.ai(o,A.aw(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.dY(-1,0,0,0,"Customized Solutions",A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,25,o,o,B.c,o,o,!0,o,o,o,o,o,o,o,o)),A.dY(-1,0,0,0,u.g,A.c(o,o,o,o,o,o,o,o,o,o,o,15,o,o,o,o,o,!0,o,o,o,o,o,o,o,o))],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,500),A.aw(A.a([new A.fv("assets/assets/images/customized.png",0,0,0,o)],r),B.i,B.p,B.j)],r),B.i,B.U,B.j),B.m,o,o,o,o,o,o,o)],r),B.i,B.ac,B.j),B.m,B.h,o,o,250,o,o,o),o,B.aM),A.ax(A.a([A.ai(o,A.fe(A.aw(A.a([A.c5("assets/images/USA.png",o,o,o),A.n(o,o,80),A.c5("assets/images/UK.png",o,o,o),A.n(o,o,80),A.c5("assets/images/Australia.png",o,o,o),A.n(o,o,80),A.c5("assets/images/Canada.png",o,o,o),A.n(o,o,80)],r),B.i,B.p,B.j),o,o),B.m,A.Y(204,11,41,62),o,o,250,o,o,A.bI(a,o,m).w.a.a)],r),B.i,B.p,B.j),A.n(o,10,o),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.d("Our Vision",o,o,o,A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,50,o,o,B.c,o,o,!0,o,o,o,o,o,o,o,o),o,o),A.d(u.t,o,o,o,A.c(o,o,o,o,o,o,o,o,o,o,o,25,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o)],r),B.i,B.p,B.j),B.m,o,o,o,o,o,o,1000),A.ai(o,A.ax(A.a([new A.aD(new A.X(20,20,20,20),o,o),A.d("Our Mission",o,o,o,A.c(o,o,new A.h(n),o,o,o,o,o,o,o,o,50,o,o,B.c,o,o,!0,o,o,o,o,o,o,o,o),o,o),A.d(u.w,o,o,o,A.c(o,o,o,o,o,o,o,o,o,o,o,25,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o)],r),B.i,B.p,B.j),B.m,o,o,o,o,o,o,1000),A.ai(o,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",o,250,200)],r),B.i,B.U,B.j),A.aw(A.a([new A.aD(new A.X(10,10,10,10),o,o),A.aw(A.a([A.fX(A.ay(B.b1,B.h,o),new A.ajA()),A.n(o,o,10),A.d(u._,o,o,o,A.c(o,o,B.h,o,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o)],r),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",o,o,o,A.c(o,o,B.h,o,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o),A.b0(o,o,A.ay(B.aW,B.h,o),o,new A.ajB(),o,o,o,o),A.b0(o,o,A.ay(B.aY,B.h,o),o,new A.ajC(),o,o,o,o),A.b0(o,o,A.ay(B.b0,B.h,o),o,new A.ajD(),o,o,o,o),A.b0(o,o,A.ay(B.aX,B.h,o),o,new A.ajE(),o,o,o,o)],r),B.i,B.p,B.j)],r),B.i,B.p,B.j)],r),B.i,B.p,B.j),B.m,new A.h(n),o,o,400,o,o,o)],r),B.i,B.ac,B.j),o,B.O),new A.i6(o),A.lW(new A.h(4280669030),A.ay(B.cf,o,o),!1,new A.ajF()))}}
 A.ajH.prototype={
 $1(a){var s=this.a.c
 s.toString
@@ -84214,7 +84214,7 @@ case 3:return A.K(null,r)}})
 return A.L($async$$0,r)},
 $S:2}
 A.rq.prototype={
-F(a){var s=null,r=4278921534,q=A.ai(s,A.c5("assets/images/Logo.png",s,s,s),B.m,B.h,s,s,230,s,s,230),p=A.d("SIS REVIEW",s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),o=A.d("Open for Fall intake 2024",s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),n=A.r8(A.d("Close",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,s,s,s,B.iP,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.a5f(a),s),m=A.lJ(s,s,new A.bs(new A.h(r),t.Il),s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s),l=t.p
+F(a){var s=null,r=4278921534,q=A.ai(s,A.c5("assets/images/Logo.png",s,s,s),B.m,B.h,s,s,230,s,s,230),p=A.d("SIS REVIEW",s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),o=A.d("Open for Fall intake 2024",s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),n=A.r8(A.d("Close",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,s,s,s,B.iP,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.a5f(a),s),m=A.lJ(s,s,new A.bs(new A.h(r),t.Il),s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s),l=t.p
 return A.a0W(A.dJ(A.ai(s,A.ax(A.a([q,p,o,A.aw(A.a([n,A.r8(A.d("Enquiry Now",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.a5g(a),m)],l),B.i,B.p,B.j)],l),B.i,B.p,B.j),B.m,B.h,s,s,420,s,s,600),s,B.O))}}
 A.a5f.prototype={
 $0(){A.d7(this.a,!1).dO()},
@@ -84231,7 +84231,7 @@ A.QO.prototype={
 aE(){this.aO()
 $.aA.fr$.push(new A.ajP(this))},
 F(a){var s=null,r=1000,q=4278921534,p=A.ad($.aAL).i("ah<1,j6>"),o=t.p
-return new A.ja(A.dJ(A.ax(A.a([A.auU(A.an(new A.ah($.aAL,new A.ajI(),p),!0,p.i("bp.E")),A.auT(!0,A.cd(0,0,3),300)),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.d("Why SIS REVIEW?",s,s,s,A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,35,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.fw("assets/assets/images/expertise.png",0,0,0,s),A.dZ(-1,0,0,0,"Expertise and Experience",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.gJ,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],o),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/guidance.png",0,0,0,s),A.dZ(-1,0,0,0,"Comprehensive Guidance",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.s,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],o),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/transparent.png",0,0,0,s),A.dZ(-1,0,0,0,"Transparent Processes",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.or,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],o),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/customized.png",0,0,0,s),A.dZ(-1,0,0,0,"Customized Solutions",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.g,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],o),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.d("OUR VISION",s,s,s,A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.t,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],o),B.i,B.p,B.j),B.m,s,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.d("OUR MISSION",s,s,s,A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.w,s,s,s,A.c(s,s,s,s,s,s,s,s,"Arial",s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],o),B.i,B.p,B.j),B.m,s,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],o),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.ajJ()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],o),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.ajK(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.ajL(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.ajM(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.ajN(),s,s,s,s)],o),B.i,B.p,B.j)],o),B.i,B.p,B.j)],o),B.i,B.ac,B.j),B.m,new A.h(q),s,s,600,s,s,s)],o),B.i,B.ac,B.j),s,B.O),s)}}
+return new A.ja(A.dJ(A.ax(A.a([A.auU(A.an(new A.ah($.aAL,new A.ajI(),p),!0,p.i("bp.E")),A.auT(!0,A.cd(0,0,3),300)),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.d("Why SIS REVIEW?",s,s,s,A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,35,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.fw("assets/assets/images/expertise.png",0,0,0,s),A.dZ(-1,0,0,0,"Expertise and Experience",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.gJ,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],o),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/guidance.png",0,0,0,s),A.dZ(-1,0,0,0,"Comprehensive Guidance",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.s,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],o),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/transparent.png",0,0,0,s),A.dZ(-1,0,0,0,"Transparent Processes",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.or,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],o),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/customized.png",0,0,0,s),A.dZ(-1,0,0,0,"Customized Solutions",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.g,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],o),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.d("OUR VISION",s,s,s,A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.t,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],o),B.i,B.p,B.j),B.m,s,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.d("OUR MISSION",s,s,s,A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.w,s,s,s,A.c(s,s,s,s,s,s,s,s,"Arial",s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],o),B.i,B.p,B.j),B.m,s,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],o),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.ajJ()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],o),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.ajK(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.ajL(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.ajM(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.ajN(),s,s,s,s)],o),B.i,B.p,B.j)],o),B.i,B.p,B.j)],o),B.i,B.ac,B.j),B.m,new A.h(q),s,s,600,s,s,s)],o),B.i,B.ac,B.j),s,B.O),s)}}
 A.ajP.prototype={
 $1(a){var s=this.a.c
 s.toString
@@ -84296,7 +84296,7 @@ A.ajN.prototype={
 $0(){},
 $S:0}
 A.rp.prototype={
-F(a){var s=null,r=4278921534,q=A.ai(s,A.c5("assets/images/Logo.png",s,s,s),B.m,B.h,s,s,230,s,s,230),p=A.d("SIS REVIEW",s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),o=A.d("Open for Fall intake 2024",s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),n=A.r8(A.d("Close",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,s,s,s,B.iP,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.a5d(a),s),m=A.lJ(s,s,new A.bs(new A.h(r),t.Il),s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s),l=t.p
+F(a){var s=null,r=4278921534,q=A.ai(s,A.c5("assets/images/Logo.png",s,s,s),B.m,B.h,s,s,230,s,s,230),p=A.d("SIS REVIEW",s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),o=A.d("Open for Fall intake 2024",s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),n=A.r8(A.d("Close",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,s,s,s,B.iP,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.a5d(a),s),m=A.lJ(s,s,new A.bs(new A.h(r),t.Il),s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s),l=t.p
 return A.a0W(A.dJ(A.ai(s,A.ax(A.a([q,p,o,A.aw(A.a([n,A.r8(A.d("Enquiry Now",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.a5e(a),m)],l),B.i,B.p,B.j)],l),B.i,B.p,B.j),B.m,B.h,s,s,420,s,s,600),s,B.O))}}
 A.a5d.prototype={
 $0(){A.d7(this.a,!1).dO()},
@@ -84308,8 +84308,8 @@ A.a5b.prototype={
 $1(a){return new A.ic(null)},
 $S:48}
 A.rz.prototype={
-F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/immigration.jpg",B.c6,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.c.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
-return A.mL(new A.i6(s),B.h,A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Work Visa",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.r,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),A.d("Tourism",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,800)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.aw(A.a([A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.a5Z()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.a6_(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.a60(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.a61(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.a62(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.a63()))}}
+F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/immigration.jpg",B.c6,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.d.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
+return A.mL(new A.i6(s),B.h,A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Work Visa",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.r,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),A.d("Tourism",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,800)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.aw(A.a([A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.a5Z()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.a6_(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.a60(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.a61(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.a62(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.a63()))}}
 A.a5Z.prototype={
 $0(){},
 $S:0}
@@ -84378,7 +84378,7 @@ return A.L($async$$0,r)},
 $S:2}
 A.tE.prototype={
 F(a){var s=null,r=1000,q=4278921534,p=t.p
-return new A.ja(A.dJ(A.ax(A.a([A.e_(B.aA,A.a([A.ai(s,A.c5("assets/images/services.jpg",B.c5,280,1/0),B.m,s,s,s,s,s,s,s)],p),B.H,B.aI),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/carrer.png",0,0,0,s),A.dZ(-1,0,0,0,"Career Counseling",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.bk,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/admission.png",0,0,0,s),A.dZ(-1,0,0,0,"Admission guidance",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.G,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/visa.png",0,0,0,s),A.dZ(-1,0,0,0,"Visa guidance",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.ju,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/financial.png",0,0,0,s),A.dZ(-1,0,0,0,"Financial assistance",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.Y,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/travel.png",0,0,0,s),A.dZ(-1,0,0,0,"Travel service",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.a,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/forex.png",0,0,0,s),A.dZ(-1,0,0,0,"Forex\xa0services",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.jM,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],p),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.acZ()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.ad_(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.ad0(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.ad1(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.ad2(),s,s,s,s)],p),B.i,B.p,B.j)],p),B.i,B.p,B.j)],p),B.i,B.ac,B.j),B.m,new A.h(q),s,s,600,s,s,s)],p),B.i,B.Y,B.j),s,B.O),s)}}
+return new A.ja(A.dJ(A.ax(A.a([A.e_(B.aA,A.a([A.ai(s,A.c5("assets/images/services.jpg",B.c5,280,1/0),B.m,s,s,s,s,s,s,s)],p),B.H,B.aI),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/carrer.png",0,0,0,s),A.dZ(-1,0,0,0,"Career Counseling",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.bk,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/admission.png",0,0,0,s),A.dZ(-1,0,0,0,"Admission guidance",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.G,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/visa.png",0,0,0,s),A.dZ(-1,0,0,0,"Visa guidance",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.ju,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/financial.png",0,0,0,s),A.dZ(-1,0,0,0,"Financial assistance",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.Y,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/travel.png",0,0,0,s),A.dZ(-1,0,0,0,"Travel service",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.a,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fw("assets/assets/images/forex.png",0,0,0,s),A.dZ(-1,0,0,0,"Forex\xa0services",A.c(s,s,new A.h(q),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dZ(-1,0,0,0,u.jM,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],p),B.i,B.p,B.j),B.m,B.h,s,s,s,s,new A.X(20,20,20,20),r),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],p),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.acZ()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.ad_(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.ad0(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.ad1(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.ad2(),s,s,s,s)],p),B.i,B.p,B.j)],p),B.i,B.p,B.j)],p),B.i,B.ac,B.j),B.m,new A.h(q),s,s,600,s,s,s)],p),B.i,B.Y,B.j),s,B.O),s)}}
 A.acZ.prototype={
 $0(){},
 $S:0}
@@ -84432,7 +84432,7 @@ $0(){},
 $S:0}
 A.tF.prototype={
 F(a){var s=null,r=4278921534,q=t.p
-return A.mL(new A.i6(s),s,A.dJ(A.ax(A.a([A.e_(B.aA,A.a([A.c5("assets/images/services.jpg",B.c5,280,1/0)],q),B.H,B.aI),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fv("assets/assets/images/carrer.png",0,0,0,s),A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(1,0,0,0,"Career Counseling",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(1,0,0,0,u.bk,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.p,B.j),B.m,s,s,s,s,s,s,500)],q),B.i,B.Y,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.p,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(-1,0,0,0,"Admission guidance",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(-1,0,0,0,u.G,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,500),A.aw(A.a([new A.fv("assets/assets/images/admission.png",0,0,0,s)],q),B.i,B.p,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.ac,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fv("assets/assets/images/visa.png",0,0,0,s),A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(1,0,0,0,"Visa guidance",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(1,0,0,0,u.ju,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.p,B.j),B.m,s,s,s,s,s,s,500)],q),B.i,B.Y,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.p,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(-1,0,0,0,"Financial assistance",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(-1,0,0,0,u.Y,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,500),A.aw(A.a([new A.fv("assets/assets/images/financial.png",0,0,0,s)],q),B.i,B.p,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.ac,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fv("assets/assets/images/travel.png",0,0,0,s),A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(1,0,0,0,"Travel service",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(1,0,0,0,u.a,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.p,B.j),B.m,s,s,s,s,s,s,500)],q),B.i,B.Y,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.p,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(-1,0,0,0,"Forex\xa0services",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(-1,0,0,0,u.jM,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,500),A.aw(A.a([new A.fv("assets/assets/images/forex.png",0,0,0,s)],q),B.i,B.p,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.ac,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.aw(A.a([A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.ad5()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.ad6(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.ad7(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.ad8(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.ad9(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.ada()))}}
+return A.mL(new A.i6(s),s,A.dJ(A.ax(A.a([A.e_(B.aA,A.a([A.c5("assets/images/services.jpg",B.c5,280,1/0)],q),B.H,B.aI),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fv("assets/assets/images/carrer.png",0,0,0,s),A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(1,0,0,0,"Career Counseling",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(1,0,0,0,u.bk,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.p,B.j),B.m,s,s,s,s,s,s,500)],q),B.i,B.Y,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.p,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(-1,0,0,0,"Admission guidance",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(-1,0,0,0,u.G,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,500),A.aw(A.a([new A.fv("assets/assets/images/admission.png",0,0,0,s)],q),B.i,B.p,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.ac,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fv("assets/assets/images/visa.png",0,0,0,s),A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(1,0,0,0,"Visa guidance",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(1,0,0,0,u.ju,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.p,B.j),B.m,s,s,s,s,s,s,500)],q),B.i,B.Y,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.p,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(-1,0,0,0,"Financial assistance",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(-1,0,0,0,u.Y,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,500),A.aw(A.a([new A.fv("assets/assets/images/financial.png",0,0,0,s)],q),B.i,B.p,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.ac,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),new A.fv("assets/assets/images/travel.png",0,0,0,s),A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(1,0,0,0,"Travel service",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(1,0,0,0,u.a,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.p,B.j),B.m,s,s,s,s,s,s,500)],q),B.i,B.Y,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.p,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.ai(s,A.aw(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.ai(s,A.ax(A.a([new A.aD(new A.X(20,20,20,20),s,s),A.dY(-1,0,0,0,"Forex\xa0services",A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,25,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s)),A.dY(-1,0,0,0,u.jM,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,500),A.aw(A.a([new A.fv("assets/assets/images/forex.png",0,0,0,s)],q),B.i,B.p,B.j)],q),B.i,B.U,B.j),B.m,s,s,s,s,s,s,s)],q),B.i,B.ac,B.j),B.m,B.h,s,s,250,s,s,s),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.aw(A.a([A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.ad5()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.ad6(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.ad7(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.ad8(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.ad9(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.ada()))}}
 A.ad5.prototype={
 $0(){},
 $S:0}
@@ -84500,8 +84500,8 @@ case 3:return A.K(null,r)}})
 return A.L($async$$0,r)},
 $S:2}
 A.u9.prototype={
-F(a){var s=null,r=4278921534,q="6. Receive Offer and Acceptance:",p=u.dN,o=t.p,n=A.e_(B.aA,A.a([A.c5("assets/images/suk.png",B.c5,280,1/0)],o),B.H,B.aI),m=A.fM(10),l=A.a([new A.cu(5,B.aN,A.Y(B.c.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
-return new A.ja(A.dJ(A.ax(A.a([n,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in UK",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.m,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Shorter Duration of Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ik,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Global Recognition:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.kf,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.iI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Language of Instruction:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fl,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Historical and Cultural Significance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.mi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Gateway to Europe:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.J,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Quality Assurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.f7,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Research Universities and Courses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.g4,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Entry Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ks,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.iM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Language Proficiency Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.e9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Submit Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ah,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(q,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(p,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Visa Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.l,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.o7,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Pre-Departure Preparation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nP,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jc,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.l1,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lm,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(q,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(p,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Books and Supplies",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.c,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Top Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.E,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Engineering:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.gX,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Computer Science and IT:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.j_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Finance and Economics",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.g9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,30,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Post-Study Work Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.g5,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.L,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Return to Home Country:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.o,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Global Career Mobility",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.al,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s)],o),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,m,l,s,B.ah),s,s,s,280)],o),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],o),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.ag2()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],o),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.ag3(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.ag4(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.ag5(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.ag6(),s,s,s,s)],o),B.i,B.p,B.j)],o),B.i,B.p,B.j)],o),B.i,B.ac,B.j),B.m,new A.h(r),s,s,500,s,s,s)],o),B.i,B.Y,B.j),s,B.O),s)}}
+F(a){var s=null,r=4278921534,q="6. Receive Offer and Acceptance:",p=u.dN,o=t.p,n=A.e_(B.aA,A.a([A.c5("assets/images/suk.png",B.c5,280,1/0)],o),B.H,B.aI),m=A.fM(10),l=A.a([new A.cu(5,B.aN,A.Y(B.d.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
+return new A.ja(A.dJ(A.ax(A.a([n,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in UK",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.m,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Shorter Duration of Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ik,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Global Recognition:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.kf,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.iI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Language of Instruction:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fl,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Historical and Cultural Significance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.mi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Gateway to Europe:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.J,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Quality Assurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.f7,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Research Universities and Courses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.g4,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Entry Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ks,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.iM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Language Proficiency Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.e9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Submit Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ah,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(q,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(p,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Visa Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.l,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.o7,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Pre-Departure Preparation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nP,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jc,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.l1,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lm,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(q,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(p,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Books and Supplies",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.c,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Top Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.E,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Engineering:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.gX,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Computer Science and IT:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.j_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Finance and Economics",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.g9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,30,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Post-Study Work Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.g5,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.L,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Return to Home Country:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.o,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Global Career Mobility",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.al,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s)],o),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,m,l,s,B.ah),s,s,s,280)],o),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],o),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.ag2()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],o),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.ag3(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.ag4(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.ag5(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.ag6(),s,s,s,s)],o),B.i,B.p,B.j)],o),B.i,B.p,B.j)],o),B.i,B.ac,B.j),B.m,new A.h(r),s,s,500,s,s,s)],o),B.i,B.Y,B.j),s,B.O),s)}}
 A.ag2.prototype={
 $0(){},
 $S:0}
@@ -84554,8 +84554,8 @@ A.ag6.prototype={
 $0(){},
 $S:0}
 A.ua.prototype={
-F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/susa.png",B.c6,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.c.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
-return new A.ja(A.dJ(A.ax(A.a([p,A.aw(A.a([A.fe(A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in USA",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.j,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lk,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.nL,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.d5,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Language of Instruction:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.Z,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Internship and Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.in,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Networking Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.oG,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Global Recognition:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.aj,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.mg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Post-Graduation Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.kp,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Student Support Services:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.bg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Research Universities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.e8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Standardized Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.cj,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Application Documents:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.eG,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Financial Documentation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.m4,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Application Submission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.ka,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Visa Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.if,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fT,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a2,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.bL,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Miscellaneous Expenses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.iw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Total Estimated Annual Cost:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.n(s,s,10),A.d(u.nC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Most Demanding Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. STEM Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.dR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.aV,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.eN,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Information Technology:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.o_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Optional Practical Training (OPT):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. H-1B Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Further Education:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.oC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,300),s,s)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.ag7()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.ag8(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.ag9(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.aga(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.agb(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.ac,B.j),B.m,new A.h(r),s,s,500,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s)}}
+F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/susa.png",B.c6,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.d.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
+return new A.ja(A.dJ(A.ax(A.a([p,A.aw(A.a([A.fe(A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in USA",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.j,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lk,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.nL,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.d5,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Language of Instruction:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.Z,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Internship and Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.in,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Networking Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.oG,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Global Recognition:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.aj,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.mg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Post-Graduation Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.kp,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Student Support Services:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.bg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Research Universities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.e8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Standardized Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.cj,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Application Documents:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.eG,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Financial Documentation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.m4,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Application Submission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.ka,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Visa Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.if,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fT,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a2,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.bL,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Miscellaneous Expenses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.iw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Total Estimated Annual Cost:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.n(s,s,10),A.d(u.nC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Most Demanding Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. STEM Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.dR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.aV,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.eN,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Information Technology:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.o_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Optional Practical Training (OPT):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. H-1B Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Further Education:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.oC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,300),s,s)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.ag7()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.ag8(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.ag9(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.aga(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.agb(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.ac,B.j),B.m,new A.h(r),s,s,500,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s)}}
 A.ag7.prototype={
 $0(){},
 $S:0}
@@ -84608,8 +84608,8 @@ A.agb.prototype={
 $0(){},
 $S:0}
 A.qy.prototype={
-F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/scanada.jpg",B.c6,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.c.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
-return A.mL(new A.i6(s),B.h,A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in Canada",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.h,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse and Inclusive Society:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.p8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bt,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Post-Study Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.oq,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Global Recognition of Degrees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.y,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.op,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.C,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.B,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.P,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bY,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work While Studying:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ho,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Immigration Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.e,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("11. Friendly Immigration Policies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.na,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("12. Cultural Events and Festivals:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.hK,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Research Universities and Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.po,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Admission Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Standardized Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fS,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.n,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Online Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Pay Application Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Receive Offer of Admission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.F,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Apply for Study Permit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.aR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dY,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.lC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jU,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Books and Supplies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.mu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Miscellaneous Expenses::",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Top Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d(u.R,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.E,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Engineering:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.e6,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.M,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Post-Graduation Work Permit (PGWP):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.m0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Express Entry Immigration System:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cS,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.L,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Entrepreneurial Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.kH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,800)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.aw(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.Zp()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.Zq(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.Zr(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.Zs(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.Zt(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.Zu()))}}
+F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/scanada.jpg",B.c6,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.d.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
+return A.mL(new A.i6(s),B.h,A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in Canada",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.h,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse and Inclusive Society:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.p8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bt,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Post-Study Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.oq,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Global Recognition of Degrees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.y,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.op,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.C,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.B,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(u.P,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bY,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work While Studying:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ho,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Immigration Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.e,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("11. Friendly Immigration Policies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.na,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("12. Cultural Events and Festivals:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.hK,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Research Universities and Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.po,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Admission Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Standardized Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fS,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.n,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Online Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Pay Application Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Receive Offer of Admission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.F,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Apply for Study Permit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.aR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dY,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.lC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jU,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dA,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Books and Supplies:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.mu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Miscellaneous Expenses::",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.b9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Top Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d(u.R,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.bu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.E,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Engineering:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.e6,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.M,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Post-Graduation Work Permit (PGWP):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.m0,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Express Entry Immigration System:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cS,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.L,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Entrepreneurial Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.kH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,800)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.aw(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.Zp()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.Zq(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.Zr(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.Zs(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.Zt(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.Zu()))}}
 A.Zp.prototype={
 $0(){},
 $S:0}
@@ -84833,7 +84833,7 @@ break
 case 5:return A.K(null,r)
 case 1:return A.J(p,r)}})
 return A.L($async$vc,r)},
-F(a){var s=this,r=4278921534,q=null,p=A.d("Book SIS Review Free Expert Counselling!",q,q,q,A.c(q,q,new A.h(r),q,q,q,q,q,q,q,q,25,q,q,B.d,q,q,!0,q,q,q,q,q,q,q,q),q,q),o=A.n(q,10,q),n=A.aeE(A.Jm(q,new A.ft(4,B.c4,B.dz),q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Name",q,q,q,q,q,q,q,q,q,q,q,q,q),q,new A.aj2(s),new A.aj3()),m=A.aeE(A.Jm(q,new A.ft(4,B.c4,B.dz),q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Phone Number",q,q,q,q,q,q,q,q,q,q,q,q,q),B.LO,new A.aj4(s),new A.aj5(s)),l=A.aeE(A.Jm(q,new A.ft(4,B.c4,B.dz),q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Email",q,q,q,q,q,q,q,q,q,q,q,q,q),B.LP,new A.aj6(s),new A.aj7(s)),k=A.aeE(A.Jm(q,new A.ft(4,B.c4,B.dz),q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Enter your message",q,q,q,q,q,q,q,q,q,q,q,q,q),q,q,q),j=A.lJ(q,q,new A.bs(new A.h(r),t.Il),q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q)
+F(a){var s=this,r=4278921534,q=null,p=A.d("Book SIS Review Free Expert Counselling!",q,q,q,A.c(q,q,new A.h(r),q,q,q,q,q,q,q,q,25,q,q,B.c,q,q,!0,q,q,q,q,q,q,q,q),q,q),o=A.n(q,10,q),n=A.aeE(A.Jm(q,new A.ft(4,B.c4,B.dz),q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Name",q,q,q,q,q,q,q,q,q,q,q,q,q),q,new A.aj2(s),new A.aj3()),m=A.aeE(A.Jm(q,new A.ft(4,B.c4,B.dz),q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Phone Number",q,q,q,q,q,q,q,q,q,q,q,q,q),B.LO,new A.aj4(s),new A.aj5(s)),l=A.aeE(A.Jm(q,new A.ft(4,B.c4,B.dz),q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Email",q,q,q,q,q,q,q,q,q,q,q,q,q),B.LP,new A.aj6(s),new A.aj7(s)),k=A.aeE(A.Jm(q,new A.ft(4,B.c4,B.dz),q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Enter your message",q,q,q,q,q,q,q,q,q,q,q,q,q),q,q,q),j=A.lJ(q,q,new A.bs(new A.h(r),t.Il),q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q)
 j=A.ax(A.a([p,o,n,m,l,k,A.r8(A.d("Submit",q,q,q,A.c(q,q,B.h,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),new A.aj8(s,a),j)],t.p),B.i,B.p,B.j)
 return A.a0W(A.dJ(A.ai(q,new A.aD(B.Ch,new A.xi(j,B.kS,s.r),q),B.m,B.h,q,q,500,q,q,600),q,B.O))}}
 A.aj3.prototype={
@@ -84888,8 +84888,8 @@ A.aj1.prototype={
 $1(a){return new A.px(null)},
 $S:183}
 A.rA.prototype={
-F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.ai(s,A.c5("assets/images/immigration.jpg",B.c5,280,1/0),B.m,s,s,s,s,s,s,s)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.c.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
-return new A.ja(A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Work Visa",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.r,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),A.d("Tourism",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,280)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.a64()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.a65(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.a66(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.a67(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.a68(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.ac,B.j),B.m,new A.h(r),s,s,500,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s)}}
+F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.ai(s,A.c5("assets/images/immigration.jpg",B.c5,280,1/0),B.m,s,s,s,s,s,s,s)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.d.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
+return new A.ja(A.dJ(A.ax(A.a([p,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Work Visa",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.r,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),A.d("Tourism",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.oi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,280)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.ax(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.a64()),A.n(s,s,10),A.d(u.T,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.a65(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.a66(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.a67(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.a68(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.ac,B.j),B.m,new A.h(r),s,s,500,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s)}}
 A.a64.prototype={
 $0(){},
 $S:0}
@@ -84959,7 +84959,7 @@ $1(a){return new A.px(null)},
 $S:183}
 A.ja.prototype={
 F(a){var s=null
-return A.mL(new A.Lc(A.auE(s,s,!1,s,s,1,s,s,s,!1,s,!1,s,s,s,s,!0,s,s,s,s,s,A.c5("assets/images/SSL.png",s,60,s),s,s,s,1,s),new A.R(1/0,60),s),B.h,this.c,new A.HK(s),A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.a_Y()))}}
+return A.mL(new A.Lc(A.auE(s,s,!1,s,s,1,s,s,s,!1,s,!1,s,s,s,s,!0,s,s,s,s,s,A.c5("assets/images/sis.png",s,40,s),s,s,s,1,s),new A.R(1/0,60),s),B.h,this.c,new A.HK(s),A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.a_Y()))}}
 A.a_Y.prototype={
 $0(){var s=0,r=A.M(t.H)
 var $async$$0=A.N(function(a,b){if(a===1)return A.J(b,r)
@@ -84976,7 +84976,7 @@ case 3:return A.K(null,r)}})
 return A.L($async$$0,r)},
 $S:2}
 A.HK.prototype={
-F(a){var s,r,q=null,p=A.Y(B.c.aW(76.5),0,0,0),o=t.p
+F(a){var s,r,q=null,p=A.Y(B.d.aW(76.5),0,0,0),o=t.p
 o=A.a([A.n(q,50,q),A.kD(q,q,new A.a06(a),q,A.d("HOME",q,q,q,A.c(q,q,B.h,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),q),A.kD(q,q,new A.a07(a),q,A.d("SERVICES",q,q,q,A.c(q,q,B.h,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),q),new A.x1(A.d("COUNTRIES",q,q,q,A.c(q,q,B.h,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),A.a([A.kD(q,q,new A.a08(a),q,A.d("US",q,q,q,A.c(q,q,B.h,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),q),A.kD(q,q,new A.a09(a),q,A.d("UK",q,q,q,A.c(q,q,B.h,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),q),A.kD(q,q,new A.a0a(a),q,A.d("CANADA",q,q,q,A.c(q,q,B.h,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),q),A.kD(q,q,new A.a0b(a),q,A.d("AUSTRALIA",q,q,q,A.c(q,q,B.h,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),q)],o),q),A.kD(q,q,new A.a0c(a),q,A.d("IMMIGRATION",q,q,q,A.c(q,q,B.h,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),q),A.ai(q,A.r8(A.d("Enquiry Now",q,q,q,A.c(q,q,B.h,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),new A.a0d(a),A.lJ(q,q,new A.bs(new A.h(4278921534),t.Il),q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q)),B.m,q,q,q,q,new A.X(0,16,0,16),new A.X(20,20,20,20),q)],o)
 s=A.aM([null,0],t.LO,t.S)
 r=!0
@@ -85210,10 +85210,10 @@ this.c4()
 this.eW()}}
 A.px.prototype={
 F(a){var s=null
-return A.a0W(A.ai(s,A.ax(A.a([A.d("Thank you our agent will get in touch",s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s)],t.p),B.i,B.ac,B.d7),B.m,B.h,s,s,s,s,new A.X(16,16,16,16),s))}}
+return A.a0W(A.ai(s,A.ax(A.a([A.d("Thank you our agent will get in touch",s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,15,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s)],t.p),B.i,B.ac,B.d7),B.m,B.h,s,s,s,s,new A.X(16,16,16,16),s))}}
 A.u8.prototype={
-F(a){var s=null,r=4278921534,q="6. Receive Offer and Acceptance:",p=u.dN,o=t.p,n=A.e_(B.aA,A.a([A.c5("assets/images/suk.png",B.c6,280,1/0)],o),B.H,B.aI),m=A.fM(10),l=A.a([new A.cu(5,B.aN,A.Y(B.c.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
-return A.mL(new A.i6(s),B.h,A.dJ(A.ax(A.a([n,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in UK",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.m,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Shorter Duration of Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ik,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Global Recognition:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.kf,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.iI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Language of Instruction:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fl,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Historical and Cultural Significance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.mi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Gateway to Europe:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.J,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Quality Assurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.f7,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Research Universities and Courses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.g4,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Entry Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ks,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.iM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Language Proficiency Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.e9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Submit Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ah,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(q,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(p,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Visa Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.l,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.o7,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Pre-Departure Preparation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nP,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jc,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.l1,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lm,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(q,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(p,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Books and Supplies",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.c,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Top Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.E,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Engineering:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.gX,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Computer Science and IT:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.j_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Finance and Economics",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.g9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,30,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Post-Study Work Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.g5,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.L,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Return to Home Country:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.o,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Global Career Mobility",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.al,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s)],o),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,m,l,s,B.ah),s,s,s,800)],o),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],o),B.i,B.U,B.j),A.aw(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.afX()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],o),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.afY(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.afZ(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.ag_(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.ag0(),s,s,s,s)],o),B.i,B.p,B.j)],o),B.i,B.p,B.j)],o),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],o),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.ag1()))}}
+F(a){var s=null,r=4278921534,q="6. Receive Offer and Acceptance:",p=u.dN,o=t.p,n=A.e_(B.aA,A.a([A.c5("assets/images/suk.png",B.c6,280,1/0)],o),B.H,B.aI),m=A.fM(10),l=A.a([new A.cu(5,B.aN,A.Y(B.d.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
+return A.mL(new A.i6(s),B.h,A.dJ(A.ax(A.a([n,A.aw(A.a([A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in UK",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.m,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Shorter Duration of Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ik,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Global Recognition:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.kf,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.iI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Language of Instruction:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lH,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Research Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fl,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Historical and Cultural Significance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.mi,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Gateway to Europe:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.J,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.fF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Quality Assurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.f7,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Research Universities and Courses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.g4,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Entry Requirements:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ks,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Prepare Application Materials:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.iM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Language Proficiency Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.e9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Submit Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.ah,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(q,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(p,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Visa Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.l,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.o7,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Pre-Departure Preparation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.gI,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.nP,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.jc,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.dF,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.l1,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lm,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d(q,s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(p,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Books and Supplies",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.c,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s),A.d("Top Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.E,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Engineering:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.gX,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Computer Science and IT:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.k_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.j_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Finance and Economics",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.g9,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,30,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.o(B.f,s,s,A.d("1. Post-Study Work Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.cw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Job Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.g5,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Ph.D. Pursuit:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),new A.o(B.f,s,s,A.d(u.L,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Return to Home Country:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.o,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Global Career Mobility",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.al,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,30,s)],o),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,m,l,s,B.ah),s,s,s,800)],o),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],o),B.i,B.U,B.j),A.aw(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.afX()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],o),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.afY(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.afZ(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.ag_(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.ag0(),s,s,s,s)],o),B.i,B.p,B.j)],o),B.i,B.p,B.j)],o),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],o),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.ag1()))}}
 A.afX.prototype={
 $0(){},
 $S:0}
@@ -85281,8 +85281,8 @@ case 3:return A.K(null,r)}})
 return A.L($async$$0,r)},
 $S:2}
 A.vq.prototype={
-F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/susa.png",B.c6,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.c.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
-return A.mL(new A.i6(s),B.h,A.dJ(A.ax(A.a([p,A.aw(A.a([A.fe(A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in USA",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.j,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lk,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.nL,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.d5,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Language of Instruction:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.Z,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Internship and Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.in,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Networking Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.oG,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Global Recognition:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.aj,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.mg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Post-Graduation Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.kp,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Student Support Services:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.bg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Research Universities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.e8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Standardized Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.cj,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Application Documents:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.eG,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Financial Documentation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.m4,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Application Submission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.ka,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Visa Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.if,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fT,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a2,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.bL,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Miscellaneous Expenses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.iw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Total Estimated Annual Cost:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.n(s,s,10),A.d(u.nC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Most Demanding Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. STEM Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.dR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.aV,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.eN,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Information Technology:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.o_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Optional Practical Training (OPT):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. H-1B Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Further Education:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.d,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.oC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,800),s,s)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.aw(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.aqe()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.aqf(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.aqg(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.aqh(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.aqi(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.aqj()))}}
+F(a){var s=null,r=4278921534,q=t.p,p=A.e_(B.aA,A.a([A.c5("assets/images/susa.png",B.c6,280,1/0)],q),B.H,B.aI),o=A.fM(10),n=A.a([new A.cu(5,B.aN,A.Y(B.d.aW(229.5),158,158,158),new A.l(0,3),10)],t.V)
+return A.mL(new A.i6(s),B.h,A.dJ(A.ax(A.a([p,A.aw(A.a([A.fe(A.ai(s,A.ax(A.a([new A.aD(new A.X(30,30,30,30),s,s),A.d("Why Study in USA",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(u.j,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,20,s),new A.o(B.f,s,s,A.d("1. Academic Excellence:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.d(u.lk,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Diverse Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.nL,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Cultural Diversity:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.d5,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Language of Instruction:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.Z,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Internship and Work Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.in,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Networking Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.oG,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Global Recognition:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.aj,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("8. Quality of Life:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.mg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("9. Post-Graduation Opportunities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.kp,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("10. Student Support Services:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.bg,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Application Process",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Research Universities:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.e8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Standardized Tests:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.cj,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Application Documents:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.eG,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Financial Documentation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.m4,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Application Submission:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.ka,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Visa Application:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Cost of Living",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Tuition Fees:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.if,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Accommodation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fT,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Food:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a8,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Transportation:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.a2,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("5. Health Insurance:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.bL,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("6. Miscellaneous Expenses:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),new A.o(B.f,s,s,A.d(u.iw,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s),A.n(s,10,s),new A.o(B.f,s,s,A.d("7. Total Estimated Annual Cost:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.n(s,s,10),A.d(u.nC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Most Demanding Courses",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. STEM Programs:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.dR,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. Business and Management:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.aV,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Health Sciences:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.eN,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("4. Information Technology:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.o_,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),A.n(s,20,s),A.d("Opportunities After Masters",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,40,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("1. Optional Practical Training (OPT):",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fu,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("2. H-1B Visa:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.fM,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s),new A.o(B.f,s,s,A.d("3. Further Education:",s,s,s,A.c(s,s,new A.h(r),s,s,s,s,s,s,s,s,30,s,s,B.c,s,s,!0,s,s,s,s,s,s,s,s),B.v,s),s),A.d(u.oC,s,s,s,A.c(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.n(s,10,s)],q),B.i,B.Y,B.j),B.m,s,s,new A.cj(B.h,s,s,o,n,s,B.ah),s,s,s,800),s,s)],q),B.i,B.p,B.j),A.ai(s,A.ax(A.a([A.aw(A.a([A.c5("assets/images/whiteout.png",s,250,200)],q),B.i,B.U,B.j),A.aw(A.a([new A.aD(new A.X(10,10,10,10),s,s),A.aw(A.a([A.fX(A.ay(B.b1,B.h,s),new A.aqe()),A.n(s,s,10),A.d(u._,s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),B.i,B.p,B.j),A.aw(A.a([A.d("Follow Us on:   ",s,s,s,A.c(s,s,B.h,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.b0(s,s,A.ay(B.aW,B.h,s),s,new A.aqf(),s,s,s,s),A.b0(s,s,A.ay(B.aY,B.h,s),s,new A.aqg(),s,s,s,s),A.b0(s,s,A.ay(B.b0,B.h,s),s,new A.aqh(),s,s,s,s),A.b0(s,s,A.ay(B.aX,B.h,s),s,new A.aqi(),s,s,s,s)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j)],q),B.i,B.p,B.j),B.m,new A.h(r),s,s,400,s,s,s)],q),B.i,B.Y,B.j),s,B.O),s,A.lW(new A.h(4280669030),A.ay(B.cf,s,s),!1,new A.aqj()))}}
 A.aqe.prototype={
 $0(){},
 $S:0}
@@ -88240,7 +88240,7 @@ B.D9=J.rD.prototype
 B.b=J.E.prototype
 B.d4=J.xK.prototype
 B.n=J.rE.prototype
-B.c=J.md.prototype
+B.d=J.md.prototype
 B.e=J.ky.prototype
 B.Di=J.jp.prototype
 B.Dj=J.f.prototype
@@ -88942,7 +88942,7 @@ B.iN=new A.lX(0,"touch")
 B.ff=new A.lX(1,"traditional")
 B.Tc=new A.a3E(0,"automatic")
 B.iP=new A.hn(5,600)
-B.d=new A.hn(6,700)
+B.c=new A.hn(6,700)
 B.mm=new A.ho("Invalid method call",null,null)
 B.CN=new A.ho("Expected envelope, got nothing",null,null)
 B.bh=new A.ho("Message corrupted",null,null)
@@ -89160,7 +89160,7 @@ B.u=new A.hn(3,400)
 B.a8=new A.hn(4,500)
 B.CM=new A.hn(7,800)
 B.ml=new A.hn(8,900)
-B.mM=A.a(s([B.iO,B.CK,B.CL,B.u,B.a8,B.iP,B.d,B.CM,B.ml]),A.at("E<hn>"))
+B.mM=A.a(s([B.iO,B.CK,B.CL,B.u,B.a8,B.iP,B.c,B.CM,B.ml]),A.at("E<hn>"))
 B.EC=A.a(s(["click","scroll"]),t.s)
 B.lt=new A.h(419430400)
 B.l=new A.l(0,0)
@@ -90578,7 +90578,7 @@ B.y0=new A.f7(0,0,B.q,!1,0,0)
 B.xV=new A.AT(1)
 B.y1=new A.t(!0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.xV,null,null,null,null,null,null,null,null)
 B.Nh=new A.t(!0,null,null,null,null,null,null,B.u,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.k7=new A.t(!0,null,null,null,null,null,null,B.d,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.k7=new A.t(!0,null,null,null,null,null,null,B.c,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.y2=new A.t(!1,B.f8,null,".SF Pro Text",null,null,17,null,null,-0.41,null,null,null,null,null,null,null,B.k,null,null,null,null,null,null,null,null)
 B.y3=new A.t(!1,null,null,null,null,null,14,B.u,null,-0.15,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.OT=new A.t(!1,null,null,null,null,null,15,B.u,null,-0.15,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -90722,13 +90722,13 @@ B.O3=new A.t(!1,null,null,null,null,null,45,B.u,null,null,null,B.w,null,null,nul
 B.NQ=new A.t(!1,null,null,null,null,null,40,B.u,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall headlineLarge 2014",null,null,null,null)
 B.Ps=new A.t(!1,null,null,null,null,null,34,B.u,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall headlineMedium 2014",null,null,null,null)
 B.Oz=new A.t(!1,null,null,null,null,null,24,B.u,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall headlineSmall 2014",null,null,null,null)
-B.Mi=new A.t(!1,null,null,null,null,null,21,B.d,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall titleLarge 2014",null,null,null,null)
+B.Mi=new A.t(!1,null,null,null,null,null,21,B.c,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall titleLarge 2014",null,null,null,null)
 B.LY=new A.t(!1,null,null,null,null,null,17,B.u,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall titleMedium 2014",null,null,null,null)
 B.Pg=new A.t(!1,null,null,null,null,null,15,B.a8,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall titleSmall 2014",null,null,null,null)
-B.OW=new A.t(!1,null,null,null,null,null,15,B.d,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall bodyLarge 2014",null,null,null,null)
+B.OW=new A.t(!1,null,null,null,null,null,15,B.c,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall bodyLarge 2014",null,null,null,null)
 B.LU=new A.t(!1,null,null,null,null,null,15,B.u,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall bodyMedium 2014",null,null,null,null)
 B.Nf=new A.t(!1,null,null,null,null,null,13,B.u,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall bodySmall 2014",null,null,null,null)
-B.Pb=new A.t(!1,null,null,null,null,null,15,B.d,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall labelLarge 2014",null,null,null,null)
+B.Pb=new A.t(!1,null,null,null,null,null,15,B.c,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall labelLarge 2014",null,null,null,null)
 B.Om=new A.t(!1,null,null,null,null,null,12,B.u,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall labelMedium 2014",null,null,null,null)
 B.N1=new A.t(!1,null,null,null,null,null,11,B.u,null,null,null,B.w,null,null,null,null,null,null,null,null,null,"tall labelSmall 2014",null,null,null,null)
 B.PS=new A.dc(B.Oj,B.Pn,B.O3,B.NQ,B.Ps,B.Oz,B.Mi,B.LY,B.Pg,B.OW,B.LU,B.Nf,B.Pb,B.Om,B.N1)
